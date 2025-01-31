@@ -104,7 +104,7 @@ def main():
         if not os.path.exists(cluster_dir):
             os.makedirs(cluster_dir)
 
-    for file_path, label in zip(valid_file_paths, clusters):
+    for file_path, label in tqdm(zip(valid_file_paths, clusters), total =len(valid_file_paths)):
         if label == -1:
             dest_dir = os.path.join(OUTPUT_FOLDER, "noise")
         else:
