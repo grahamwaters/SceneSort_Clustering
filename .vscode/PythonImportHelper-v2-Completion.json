@@ -1,0 +1,317 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "clip",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "clip",
+        "description": "clip",
+        "detail": "clip",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_embedding",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_video_embedding",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "extract_embedding",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_image_embedding",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_image_embedding(image_path):\n    \"\"\"Load an image file, preprocess it, and compute its CLIP embedding.\"\"\"\n    print(f'Processing Image: {image_path}')\n    try:\n        image = Image.open(image_path).convert(\"RGB\")\n        image_input = preprocess(image).unsqueeze(0).to(device)\n        with torch.no_grad():\n            embedding = model.encode_image(image_input)\n        # Normalize the embedding vector\n        embedding = embedding / embedding.norm(dim=-1, keepdim=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_video_embedding",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_video_embedding(video_path):\n    \"\"\"\n    Process a video file: sample key frames every VIDEO_FRAME_INTERVAL seconds,\n    compute embeddings for each frame, and return the average embedding.\n    \"\"\"\n    print(f'Processing Video: {video_path}')\n    try:\n        cap = cv2.VideoCapture(video_path)\n        if not cap.isOpened():\n            print(f\"Failed to open video {video_path}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "extract_embedding",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def extract_embedding(file_path):\n    \"\"\"Determine file type and return its corresponding embedding.\"\"\"\n    ext = os.path.splitext(file_path)[1].lower()\n    if ext in IMAGE_EXTENSIONS:\n        return get_image_embedding(file_path)\n    elif ext in VIDEO_EXTENSIONS:\n        return get_video_embedding(file_path)\n    else:\n        return None\n# -------------",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    # Gather all media files from the input folder\n    file_paths = []\n    for root, _, files in tqdm(os.walk(INPUT_FOLDER)):\n        for file in files:\n            ext = os.path.splitext(file)[1].lower()\n            if ext in IMAGE_EXTENSIONS or ext in VIDEO_EXTENSIONS:\n                file_paths.append(os.path.join(root, file))\n    if not file_paths:\n        print(\"No media files found in the input folder.\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "INPUT_FOLDER",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "INPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage\"   # Folder containing unclassified photos and videos\nOUTPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage/sorted_scenes\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "OUTPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage/sorted_scenes\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "EPS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "EPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_SAMPLES",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "MIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_FRAME_INTERVAL",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------\ndef get_image_embedding(image_path):\n    \"\"\"Load an image file, preprocess it, and compute its CLIP embedding.\"\"\"\n    print(f'Processing Image: {image_path}')\n    try:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "def main():\n    # Gather all media files from the input folder and subfolders\n    file_paths = []\n    for root, _, files in tqdm(os.walk(INPUT_FOLDER)):\n            for file in files:\n                if file.startswith(\"._\"):  #? Skip hidden files\n                    continue  # Go to the next file in the loop\n                # print(f'ext: {os.path.splitext(file)}')\n                ext = os.path.splitext(file)[1]\n                ext = ext.lower() #? does this fix the error?",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "INPUT_FOLDER",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "INPUT_FOLDER = \"/Volumes/BigBoy/portugal trip 2025\"  # Folder containing unclassified photos and videos\nOUTPUT_FOLDER = \"/Volumes/BigBoy/sorted_media\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "OUTPUT_FOLDER = \"/Volumes/BigBoy/sorted_media\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "EPS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "EPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_SAMPLES",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "MIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_FRAME_INTERVAL",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "VIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------\n# ... (get_image_embedding, get_video_embedding, extract_embedding remain the same)\nfrom main import get_image_embedding, get_video_embedding, extract_embedding #note: these are imported from the other file main.py\n# -------------\n# Main processing",
+        "detail": "version2",
+        "documentation": {}
+    }
+]
