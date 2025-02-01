@@ -18,3 +18,41 @@ this is an example of what I was thinking of. Is it possible to run that in a se
 
 Add a check at the beginning of the code to survey what has already been processed in the output folder and remove the files already processed from the files in queue.
 If any files trigger warnings then add them to an error logfile which you create in the main directory.
+
+Add Additional metrics (e.g., model scoring, certainty scores, error ranges) can be computed and added here.
+
+
+1. add `skip_errors` parameter to indicate user wants to read error.log before tasking, and remove the errored file paths from the queue of files to process.
+2. add colorama support to the CLI. each progress bar (alive progress would be good here) should be color coded by the file's extension.
+3. add a config file for the project containing essential variables such as:
+```py
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff"}
+VIDEO_EXTENSIONS = {".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv"}
+RAW_EXTENSIONS   = {".raw", ".cr2", ".nef", ".dng", ".arw", ".rw2"}
+
+process_large_files = False  # Updated via CLI
+
+DEFAULT_CONFIG = {
+    'clustering': {
+        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'
+        'eps': 0.15,
+        'min_samples': 3, # the smallest number of items per cluster
+        'visual_weight': 0.7, # how much the model emphasizes visual similarity over temporal similarity.
+        'temporal_weight': 0.3 # how much the model emphasizes temporal similarity over visual similarity.
+    },
+    'processing': { #todo add more documentation and explanation to these parameters as comments.
+        'batch_size': 32,
+        'max_workers': 4,
+        'video_interval': 30,  # in seconds
+        'max_file_size_mb': 500
+    },
+    'safety': {
+        'dry_run': False,
+        'min_disk_space_gb': 5,
+        'checksum_verify': True
+    },
+    # Optional parameter for early termination in video processing
+    'video_certainty_threshold': None  # e.g. 0.05 (set via CLI)
+}
+
+```

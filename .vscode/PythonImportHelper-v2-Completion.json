@@ -100,6 +100,30 @@
         "documentation": {}
     },
     {
+        "label": "UnidentifiedImageError",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "tqdm",
         "importPath": "tqdm",
         "description": "tqdm",
@@ -198,6 +222,14 @@
         "documentation": {}
     },
     {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -234,12 +266,20 @@
         "documentation": {}
     },
     {
-        "label": "threading",
+        "label": "pickle",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "threading",
-        "description": "threading",
-        "detail": "threading",
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -288,6 +328,38 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -429,6 +501,22 @@
         "documentation": {}
     },
     {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "HDBSCAN",
+        "importPath": "hdbscan",
+        "description": "hdbscan",
+        "isExtraImport": true,
+        "detail": "hdbscan",
+        "documentation": {}
+    },
+    {
         "label": "HDBSCAN",
         "importPath": "hdbscan",
         "description": "hdbscan",
@@ -501,12 +589,28 @@
         "documentation": {}
     },
     {
-        "label": "pickle",
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
         "documentation": {}
     },
     {
@@ -601,4 +705,440 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "MIN_SAMPLES = 2     # Minim
+        "peekOfCode": "MIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_FRAME_INTERVAL",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------\ndef get_image_embedding(image_path):\n    \"\"\"Load an image file, preprocess it, and compute its CLIP embedding.\"\"\"\n    print(f'Processing Image: {image_path}')\n    try:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        # Lock for thread safety when calling the CLIP model\n        self.model_lock = None\n    def _load_model(self):\n        \"\"\"Load the CLIP model.\"\"\"",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file if it exists; otherwise, return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "process_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "media_scene_sorter",
+        "description": "media_scene_sorter",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "media_scene_sorter",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        # Lock to ensure thread safety when calling the CLIP model\n        self.model_lock = threading.Lock()\n    def _load_model(self):\n        \"\"\"Load CLIP model with error handling.\"\"\"",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file, or return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # This will be updated via a CLI parameter.\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # This will be updated via a CLI parameter.\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "process_large_files = False  # This will be updated via a CLI parameter.\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "multithread_version",
+        "description": "multithread_version",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "multithread_version",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        # Lock to ensure thread safety when calling the CLIP model\n        self.model_lock = threading.Lock()\n    def _load_model(self):\n        \"\"\"Load CLIP model with error handling.\"\"\"",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file, or return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # Updated via CLI\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # Updated via CLI\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "process_large_files = False  # Updated via CLI\n# Configure logging\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "multithread_version2",
+        "description": "multithread_version2",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "multithread_version2",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        # Lock for thread safety when calling the CLIP model\n        self.model_lock = threading.Lock()\n    def _load_model(self):\n        \"\"\"Load CLIP model with error handling.\"\"\"",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard_updater",
+        "kind": 2,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "def dashboard_updater():\n    \"\"\"Thread function that writes the current video dashboard to 'dashboard.txt' every second.\"\"\"\n    import time\n    while True:\n        lines = [\"| Video File | Batch # | Frames in Batch | Std Dev |\"]\n        lines.append(\"|------------|---------|-----------------|---------|\")\n        with dashboard_lock:\n            for video, batches in video_dashboard.items():\n                for batch in batches:\n                    lines.append(f\"| {video} | {batch['batch_num']} | {batch['frame_count']} | {batch['stdev']:.4f} |\")",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file, or return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # Updated via CLI\n# --- Logging Setup ---\n# Basic log (both to console and file)\nlogging.basicConfig(\n    level=logging.INFO,",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\n# Default is False: large files are skipped.\nprocess_large_files = False  # Updated via CLI\n# --- Logging Setup ---\n# Basic log (both to console and file)\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "process_large_files = False  # Updated via CLI\n# --- Logging Setup ---\n# Basic log (both to console and file)\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Error log file for warnings/errors\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "video_dashboard",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "video_dashboard = {}\ndashboard_lock = threading.Lock()\ndef dashboard_updater():\n    \"\"\"Thread function that writes the current video dashboard to 'dashboard.txt' every second.\"\"\"\n    import time\n    while True:\n        lines = [\"| Video File | Batch # | Frames in Batch | Std Dev |\"]\n        lines.append(\"|------------|---------|-----------------|---------|\")\n        with dashboard_lock:\n            for video, batches in video_dashboard.items():",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard_lock",
+        "kind": 5,
+        "importPath": "multithread_withdashboard",
+        "description": "multithread_withdashboard",
+        "peekOfCode": "dashboard_lock = threading.Lock()\ndef dashboard_updater():\n    \"\"\"Thread function that writes the current video dashboard to 'dashboard.txt' every second.\"\"\"\n    import time\n    while True:\n        lines = [\"| Video File | Batch # | Frames in Batch | Std Dev |\"]\n        lines.append(\"|------------|---------|-----------------|---------|\")\n        with dashboard_lock:\n            for video, batches in video_dashboard.items():\n                for batch in batches:",
+        "detail": "multithread_withdashboard",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "def main():\n    # Gather all media files from the input folder and subfolders\n    file_paths = []\n    for root, _, files in tqdm(os.walk(INPUT_FOLDER)):\n            for file in files:\n                if file.startswith(\"._\"):  #? Skip hidden files\n                    continue  # Go to the next file in the loop\n                # print(f'ext: {os.path.splitext(file)}')\n                ext = os.path.splitext(file)[1]\n                ext = ext.lower() #? does this fix the error?",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "INPUT_FOLDER",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "INPUT_FOLDER = \"/Volumes/BigBoy/portugal trip 2025\"  # Folder containing unclassified photos and videos\nOUTPUT_FOLDER = \"/Volumes/BigBoy/sorted_media\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "OUTPUT_FOLDER = \"/Volumes/BigBoy/sorted_media\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "EPS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "EPS = 0.14  # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_SAMPLES",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "MIN_SAMPLES = 2  # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_FRAME_INTERVAL",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "VIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\", \".dng\"}  # note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------",
+        "detail": "version2",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "version2",
+        "description": "version2",
+        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------\n# ... (get_image_embedding, get_video_embedding, extract_embedding remain the same)\nfrom main import get_image_embedding, get_video_embedding, extract_embedding #note: these are imported from the other file main.py\n# -------------\n# Main processing",
+        "detail": "version2",
+        "documentation": {}
+    }
+]
