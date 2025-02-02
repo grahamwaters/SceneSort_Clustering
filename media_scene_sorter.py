@@ -65,10 +65,10 @@ logger.addHandler(error_handler)
 DEFAULT_CONFIG = {
     'clustering': {
         'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'
-        'eps': 0.15,
+        'eps': 0.19, # was 0.15
         'min_samples': 3,
-        'visual_weight': 0.7,
-        'temporal_weight': 0.3
+        'visual_weight': 0.8, # .7
+        'temporal_weight': 0.2 # .3
     },
     'processing': {
         'batch_size': 32,
@@ -158,7 +158,8 @@ class MediaProcessor:
                 logger.warning("Skipping large file: %s", path)
                 return False
             logger.warning("Large file found, processing: %s", path)
-
+        else:
+            logger.warning("\tProcessing: %s", path)
         file_hash = self._calculate_hash(path)
         if self.config['safety']['checksum_verify']:
             if file_hash in self.file_hashes:

@@ -804,7 +804,7 @@
         "kind": 5,
         "importPath": "media_scene_sorter",
         "description": "media_scene_sorter",
-        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19, # was 0.15",
         "detail": "media_scene_sorter",
         "documentation": {}
     },
@@ -813,7 +813,7 @@
         "kind": 5,
         "importPath": "media_scene_sorter",
         "description": "media_scene_sorter",
-        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19, # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8, # .7",
         "detail": "media_scene_sorter",
         "documentation": {}
     },
@@ -822,7 +822,7 @@
         "kind": 5,
         "importPath": "media_scene_sorter",
         "description": "media_scene_sorter",
-        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19, # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8, # .7\n        'temporal_weight': 0.2 # .3\n    },\n    'processing': {\n        'batch_size': 32,",
         "detail": "media_scene_sorter",
         "documentation": {}
     },
