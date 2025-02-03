@@ -56,3 +56,14 @@ DEFAULT_CONFIG = {
 }
 
 ```
+
+
+1. Any time the code is terminated, the progress of the script should be resumable. This means checkpoint saves along the way.
+2. When the code reaches the stage where files are being moved implement the following changes.
+   1. hyperoptimize the way the files are traversed, read and written, and choose the fastest way to safely move the files to the destination.
+   2. If the file's "created date" is AFTER the "date modified" then change the created date to the date modified as you move it to the destination if the user has supplied the CLI argument --fix-dates
+   3. Once you have sorted the files into the scenes based on the initial parameters for epsilon, I want your code to iteratively do the following.
+      1. check the files in the 'noise' folder, you will perform the same analysis as you did last time for all the files in the input folder, however, this time you must sort them into the same scene folders (if you can) that you already created. Else, you will create a new scene. For each subsequent iteration and rescan of the noise folder modify epsilon to be less strict by 0.05. Repeat this until all noise images are sorted into the folders. NOTE: you will be using the same destination directory as you did for iteration 1.
+         1. Each iteration should be colored in the CLI with a new color to indicate which round it is on.
+   4. Note: if the code is executed, and the destination directory already has scene folders, then check the noise folder. IF files are in the noise folder then the user wants you to begin with those files and process them into the scenes as discussed above. ELSE if there is nothing in the noise folder, then look for files in the `input` directory to sort into the existing scenes by similarity. Otherwise, sort the new photos from the input direcory into the scenes already present in the destination directory first, adding new scenes as needed when you find new clusters.
+   5. Note that the instance above should only apply if there are folders with files in the destination directory. Else proceed as you would normally.

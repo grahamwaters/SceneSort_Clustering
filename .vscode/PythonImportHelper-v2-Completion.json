@@ -9,12 +9,299 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
         "label": "shutil",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "shutil",
         "description": "shutil",
         "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "signal",
+        "description": "signal",
+        "detail": "signal",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -36,7 +323,24 @@
         "documentation": {}
     },
     {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
         "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "UnidentifiedImageError",
         "importPath": "PIL",
         "description": "PIL",
         "isExtraImport": true,
@@ -182,292 +486,6 @@
         "documentation": {}
     },
     {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "pickle",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "yaml",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "yaml",
-        "description": "yaml",
-        "detail": "yaml",
-        "documentation": {}
-    },
-    {
         "label": "rawpy",
         "kind": 6,
         "isExtraImport": true,
@@ -477,6 +495,62 @@
         "documentation": {}
     },
     {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "StandardScaler",
         "importPath": "sklearn.preprocessing",
         "description": "sklearn.preprocessing",
@@ -538,6 +612,30 @@
         "description": "hdbscan",
         "isExtraImport": true,
         "detail": "hdbscan",
+        "documentation": {}
+    },
+    {
+        "label": "HDBSCAN",
+        "importPath": "hdbscan",
+        "description": "hdbscan",
+        "isExtraImport": true,
+        "detail": "hdbscan",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
         "documentation": {}
     },
     {
@@ -638,83 +736,38 @@
         "documentation": {}
     },
     {
-        "label": "get_image_embedding",
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MediaProcessor:\n    instance = None  # For global access in signal handler\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        self.processed_files: List[Path] = []\n        self.features: List[Tuple[np.ndarray, float]] = []\n        self.last_checkpoint_time = time.time()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "save_progress",
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def get_image_embedding(image_path):\n    \"\"\"Load an image file, preprocess it, and compute its CLIP embedding.\"\"\"\n    print(f'Processing Image: {image_path}')\n    try:\n        image = Image.open(image_path).convert(\"RGB\")\n        image_input = preprocess(image).unsqueeze(0).to(device)\n        with torch.no_grad():\n            embedding = model.encode_image(image_input)\n        # Normalize the embedding vector\n        embedding = embedding / embedding.norm(dim=-1, keepdim=True)",
+        "peekOfCode": "def save_progress(processed_files: List[Path], features: List[Tuple[np.ndarray, float]]):\n    \"\"\"Save checkpoint progress to a pickle file.\"\"\"\n    try:\n        with open(CHECKPOINT_FILE, \"wb\") as pf:\n            pickle.dump({\"processed_files\": processed_files, \"features\": features}, pf)\n        logger.info(\"Checkpoint saved with %d files.\", len(processed_files))\n    except Exception as e:\n        logger.error(\"Failed to save checkpoint: %s\", e)\ndef signal_handler(signum, frame):\n    \"\"\"On termination, save progress before exiting.\"\"\"",
         "detail": "main",
         "documentation": {}
     },
     {
-        "label": "get_video_embedding",
+        "label": "signal_handler",
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def get_video_embedding(video_path):\n    \"\"\"\n    Process a video file: sample key frames every VIDEO_FRAME_INTERVAL seconds,\n    compute embeddings for each frame, and return the average embedding.\n    \"\"\"\n    print(f'Processing Video: {video_path}')\n    try:\n        cap = cv2.VideoCapture(video_path)\n        if not cap.isOpened():\n            print(f\"Failed to open video {video_path}\")",
+        "peekOfCode": "def signal_handler(signum, frame):\n    \"\"\"On termination, save progress before exiting.\"\"\"\n    logger.info(\"Termination signal received; saving checkpoint before exit.\")\n    if MediaProcessor.instance is not None:\n        save_progress(MediaProcessor.instance.processed_files, MediaProcessor.instance.features)\n    sys.exit(0)\n# Register termination signal handlers.\nsignal.signal(signal.SIGINT, signal_handler)\nsignal.signal(signal.SIGTERM, signal_handler)\nclass MediaProcessor:",
         "detail": "main",
         "documentation": {}
     },
     {
-        "label": "extract_embedding",
+        "label": "load_config",
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def extract_embedding(file_path):\n    \"\"\"Determine file type and return its corresponding embedding.\"\"\"\n    ext = os.path.splitext(file_path)[1].lower()\n    if ext in IMAGE_EXTENSIONS:\n        return get_image_embedding(file_path)\n    elif ext in VIDEO_EXTENSIONS:\n        return get_video_embedding(file_path)\n    else:\n        return None\n# -------------",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "def main():\n    # Gather all media files from the input folder\n    file_paths = []\n    for root, _, files in tqdm(os.walk(INPUT_FOLDER)):\n        for file in files:\n            ext = os.path.splitext(file)[1].lower()\n            if ext in IMAGE_EXTENSIONS or ext in VIDEO_EXTENSIONS:\n                file_paths.append(os.path.join(root, file))\n    if not file_paths:\n        print(\"No media files found in the input folder.\")",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "INPUT_FOLDER",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "INPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage\"   # Folder containing unclassified photos and videos\nOUTPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage/sorted_scenes\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "OUTPUT_FOLDER",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "OUTPUT_FOLDER = \"/Users/grahamwaters/Downloads/TripFootage/sorted_scenes\"  # Output directory where files are sorted by scene\n# DBSCAN parameters (adjust these for your data)\nEPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "EPS",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "EPS = 0.14           # Maximum distance between samples for them to be considered in the same neighborhood\nMIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "MIN_SAMPLES",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "MIN_SAMPLES = 2     # Minimum number of samples required in a neighborhood to form a cluster\nVIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "VIDEO_FRAME_INTERVAL",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "VIDEO_FRAME_INTERVAL = 60  # seconds between key frames for video processing\n# Allowed file extensions for images and videos\nIMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file, or return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
         "detail": "main",
         "documentation": {}
     },
@@ -723,7 +776,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".tiff\",\".dng\"} #note - dng not included in initial code, may cause issues.\nVIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flags (updated via CLI)\nprocess_large_files = False\nfix_dates = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",",
         "detail": "main",
         "documentation": {}
     },
@@ -732,16 +785,70 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".avi\", \".mov\", \".mkv\"}\n# -------------\n# Setup device and load the CLIP model\n# -------------\ndevice = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flags (updated via CLI)\nprocess_large_files = False\nfix_dates = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[logging.FileHandler(\"media_sorter.log\"), logging.StreamHandler()]",
         "detail": "main",
         "documentation": {}
     },
     {
-        "label": "device",
+        "label": "process_large_files",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\nmodel, preprocess = clip.load(\"ViT-B/32\", device=device)\nmodel.eval()\n# -------------\n# Functions to process media files\n# -------------\ndef get_image_embedding(image_path):\n    \"\"\"Load an image file, preprocess it, and compute its CLIP embedding.\"\"\"\n    print(f'Processing Image: {image_path}')\n    try:",
+        "peekOfCode": "process_large_files = False\nfix_dates = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[logging.FileHandler(\"media_sorter.log\"), logging.StreamHandler()]\n)\nlogger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "fix_dates",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "fix_dates = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[logging.FileHandler(\"media_sorter.log\"), logging.StreamHandler()]\n)\nlogger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "CHECKPOINT_FILE",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "CHECKPOINT_FILE = \"progress.pkl\"\ndef save_progress(processed_files: List[Path], features: List[Tuple[np.ndarray, float]]):\n    \"\"\"Save checkpoint progress to a pickle file.\"\"\"\n    try:\n        with open(CHECKPOINT_FILE, \"wb\") as pf:\n            pickle.dump({\"processed_files\": processed_files, \"features\": features}, pf)\n        logger.info(\"Checkpoint saved with %d files.\", len(processed_files))\n    except Exception as e:\n        logger.error(\"Failed to save checkpoint: %s\", e)\ndef signal_handler(signum, frame):",
         "detail": "main",
         "documentation": {}
     },
