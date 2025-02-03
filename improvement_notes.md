@@ -67,3 +67,6 @@ DEFAULT_CONFIG = {
          1. Each iteration should be colored in the CLI with a new color to indicate which round it is on.
    4. Note: if the code is executed, and the destination directory already has scene folders, then check the noise folder. IF files are in the noise folder then the user wants you to begin with those files and process them into the scenes as discussed above. ELSE if there is nothing in the noise folder, then look for files in the `input` directory to sort into the existing scenes by similarity. Otherwise, sort the new photos from the input direcory into the scenes already present in the destination directory first, adding new scenes as needed when you find new clusters.
    5. Note that the instance above should only apply if there are folders with files in the destination directory. Else proceed as you would normally.
+
+1. Use your reasoning to determing the best way to adapt the parameters like epsilon etc. to sort out the noise files. Also, if the code runs for 4 iterations without changing the files or moving anything then skip those files.
+2. Within the noise folder I see duplication, please don't do that.

@@ -1,22 +1,21 @@
 #!/usr/bin/env python3
 """
 Enhanced Media Scene Sorter with Resumable Checkpoints, Optimized File Operations,
-and Iterative Noise Reprocessing
+and Iterative Processing of Noise/New Files
 
 Extended Summary:
 1. At any termination point, progress is saved (via periodic checkpoints and signal handlers).
-2. Before processing begins, the destination is checked:
-   - If scene folders already exist, then the iterative noise processing mode is activated.
+2. Before processing begins, the destination is inspected:
+   - If scene folders already exist, then:
+     a. If the 'noise' folder contains files, those files are processed into the scenes.
+     b. Else, new files from the input directory (that aren’t already in a scene) are sorted into the existing scenes by similarity, with new scenes added as needed.
+   - Otherwise, process all input files normally.
 3. Files are traversed using an optimized method (os.walk) and moved as fast as possible.
    - If --fix-dates is supplied and a file’s created date is AFTER its modified date,
      then the created date is updated to match the modified date.
-4. After initial clustering (based on the given epsilon), the code iteratively processes the
-   'noise' folder (or unsorted input files) as follows:
-   - It re-runs analysis on those files, clustering them with a less strict epsilon (increased by 0.05 per iteration)
-     and moving them into the matching scene folder (or a new scene folder if needed).
-   - Each iteration prints its round number in a different CLI color.
-5. This iterative process only applies if the destination directory already contains scene folders.
-   Otherwise, the normal processing pipeline is executed.
+4. After initial clustering, iterative processing is applied:
+   - In each iteration, if there are unsorted (noise) files or new unsorted input files, they are re-clustered with a relaxed epsilon (increased by 0.05 per iteration).
+   - Each iteration is printed in a different CLI color.
 """
 
 import os
@@ -151,16 +150,18 @@ class MediaProcessor:
 
     def process_directory(self, input_dir: Path, output_dir: Path):
         """
-        Main pipeline.
-          1. Check the destination directory first.
-          2. If scene folders already exist, then process noise (or new input files) iteratively.
-          3. Otherwise, process all input files normally.
+        Main pipeline:
+          1. Check the destination directory.
+             - If scene folders already exist, then:
+               a. If the 'noise' folder contains files, process those first.
+               b. Else, look for new files in the input directory not already sorted into a scene.
+          2. Otherwise, process all files normally.
         """
         if not input_dir.exists() or not input_dir.is_dir():
             logger.error("Input directory %s does not exist or is not a directory.", input_dir)
             sys.exit(1)
 
-        # Check destination before processing.
+        # Check destination.
         destination_ready = False
         if output_dir.exists():
             scene_folders = [d for d in output_dir.iterdir() if d.is_dir() and d.name.startswith("scene_")]
@@ -170,24 +171,20 @@ class MediaProcessor:
         else:
             output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Determine the initial source files.
+        # Determine source files.
         if destination_ready:
-            # If destination has scene folders, check the noise folder.
             noise_folder = output_dir / "noise"
-            if noise_folder.exists() and any(noise_folder.iterdir()):
-                logger.info("Processing files from the 'noise' folder first.")
-                source_files = list(noise_folder.iterdir())
+            if noise_folder.exists() and any(p.is_file() and not p.name.startswith("._") for p in noise_folder.iterdir()):
+                logger.info("Found files in the 'noise' folder; processing these first.")
+                source_files = [p for p in noise_folder.iterdir() if p.is_file() and not p.name.startswith("._")]
             else:
-                # Otherwise, process new files from the input directory that are not yet in any scene.
                 all_input_files = self._gather_files(input_dir)
-                # Exclude files already in any scene folder.
                 sorted_files = set()
                 for scene in output_dir.glob("scene_*"):
                     sorted_files.update({p.stem for p in scene.glob("*")})
                 source_files = [f for f in all_input_files if f.stem not in sorted_files]
-                logger.info("No noise files found; processing new files from the input directory.")
+                logger.info("No noise files found; processing new files from input into existing scenes.")
         else:
-            # Normal processing.
             source_files = self._gather_files(input_dir)
 
         # Resume from checkpoint if requested.
@@ -202,16 +199,16 @@ class MediaProcessor:
             self.processed_files, self.features = self._extract_features(source_files)
             save_progress(self.processed_files, self.features)
 
-        # Cluster the files.
+        # Cluster and move files.
         clusters = self._cluster_files(self.features)
         self._organize_files(self.processed_files, clusters, output_dir)
 
-        # If destination already had scene folders, then enter iterative noise processing.
+        # If destination already had scene folders, then run iterative processing.
         if destination_ready:
             self._iterative_noise_processing(input_dir, output_dir)
 
     def _gather_files(self, input_dir: Path) -> List[Path]:
-        """Collect media files (images, videos, RAW) using os.walk."""
+        """Collect media files using os.walk (skipping files starting with '._')."""
         media_files = []
         allowed_exts = IMAGE_EXTENSIONS | VIDEO_EXTENSIONS | RAW_EXTENSIONS
         for root, _, files in os.walk(input_dir):
@@ -219,9 +216,8 @@ class MediaProcessor:
                 if file.startswith("._"):
                     continue
                 path = Path(root) / file
-                if path.suffix.lower() in allowed_exts:
-                    if self._validate_file(path):
-                        media_files.append(path)
+                if path.suffix.lower() in allowed_exts and self._validate_file(path):
+                    media_files.append(path)
         return media_files
 
     def _validate_file(self, path: Path) -> bool:
@@ -255,7 +251,7 @@ class MediaProcessor:
     def _extract_features(self, files: List[Path]) -> Tuple[List[Path], List[Tuple[np.ndarray, float]]]:
         """
         Batch process files for visual and temporal features.
-        Returns a tuple of:
+        Returns:
           - List of files successfully processed.
           - List of tuples: (visual_embedding, timestamp).
         """
@@ -270,7 +266,6 @@ class MediaProcessor:
                         file_path, feat = result
                         processed_files.append(file_path)
                         features.append(feat)
-                        # Save checkpoint every 10 seconds.
                         if time.time() - self.last_checkpoint_time > 10:
                             save_progress(processed_files, features)
                             self.last_checkpoint_time = time.time()
@@ -333,10 +328,7 @@ class MediaProcessor:
         clusters = clusterer.fit_predict(combined_features)
         unique, counts = np.unique(clusters, return_counts=True)
         cluster_distribution = dict(zip(unique, counts))
-        logger.info("Clustering Summary:\n"
-                    "  Total files processed: %d\n"
-                    "  Number of clusters (excluding noise): %d\n"
-                    "  Cluster distribution: %s",
+        logger.info("Clustering Summary:\n  Total files processed: %d\n  Number of clusters (excluding noise): %d\n  Cluster distribution: %s",
                     len(combined_features),
                     len(unique) - (1 if -1 in unique else 0),
                     cluster_distribution)
@@ -404,9 +396,7 @@ class MediaProcessor:
         stat = shutil.disk_usage(output_dir)
         min_space = self.config['safety']['min_disk_space_gb'] * 1024**3
         if stat.free < required_bytes + min_space:
-            raise RuntimeError(
-                f"Insufficient disk space. Required: {required_bytes/1024**2:.2f}MB, Available: {stat.free/1024**3:.2f}GB"
-            )
+            raise RuntimeError(f"Insufficient disk space. Required: {required_bytes/1024**2:.2f}MB, Available: {stat.free/1024**3:.2f}GB")
 
     def _get_file_datetime(self, path: Path) -> datetime:
         """Return the file's modification time as its datetime."""
@@ -533,11 +523,11 @@ class MediaProcessor:
 
     def _iterative_noise_processing(self, input_dir: Path, output_dir: Path):
         """
-        Iteratively process files from the noise folder (or new unsorted files)
-        into the existing scene folders.
+        Iteratively process unsorted files into the existing scene folders.
+          - If the noise folder has files (excluding "._" metadata files), process those.
+          - Otherwise, look for new files in the input directory that are not already in any scene.
           - In each iteration, relax the clustering strictness (increase epsilon by 0.05).
-          - Each round prints a message in a new CLI color.
-          - Repeat until no unsorted (noise) files remain.
+          - Each round prints its round number in a new CLI color.
         """
         noise_folder = output_dir / "noise"
         iteration = 1
@@ -545,26 +535,23 @@ class MediaProcessor:
         color_index = 0
 
         while True:
-            # Determine the source files.
-            if noise_folder.exists() and any(noise_folder.iterdir()):
+            # Determine source files.
+            if noise_folder.exists() and any(p.is_file() and not p.name.startswith("._") for p in noise_folder.iterdir()):
+                files = [p for p in noise_folder.iterdir() if p.is_file() and not p.name.startswith("._")]
                 logger.info(COLOR_CYCLE[color_index % len(COLOR_CYCLE)] +
                             f"Iteration {iteration}: Re-processing files from 'noise' folder with eps={current_eps:.2f}" +
                             Style.RESET_ALL)
-                files = [p for p in noise_folder.iterdir() if p.is_file()]
             else:
-                # If no noise files exist, check for new files in the input directory not yet sorted.
                 files = self._gather_files(input_dir)
                 sorted_files = set()
                 for scene in output_dir.glob("scene_*"):
                     sorted_files.update({p.stem for p in scene.glob("*")})
                 files = [f for f in files if f.stem not in sorted_files]
-                if not files:
-                    logger.info("No new files to process in iterative noise sorting.")
-                    break
                 logger.info(COLOR_CYCLE[color_index % len(COLOR_CYCLE)] +
-                            f"Iteration {iteration}: Processing new files into existing scenes with eps={current_eps:.2f}" +
+                            f"Iteration {iteration}: Processing new files from input into existing scenes with eps={current_eps:.2f}" +
                             Style.RESET_ALL)
             if not files:
+                logger.info("No new files to process in iterative sorting.")
                 break
 
             processed_files, features = self._extract_features(files)
@@ -591,14 +578,14 @@ class MediaProcessor:
                         self._fix_file_dates(dest_path)
                 except Exception as e:
                     logger.error("Failed to move %s: %s", path, e)
-            # Check if noise folder still has files.
-            if noise_folder.exists() and any(noise_folder.iterdir()):
+            # If there remain any unsorted files (excluding metadata), continue.
+            if any(p.is_file() and not p.name.startswith("._") for p in noise_folder.iterdir()):
                 iteration += 1
                 current_eps += 0.05
                 color_index += 1
-                time.sleep(1)  # Brief pause between iterations.
+                time.sleep(1)
             else:
-                logger.info("All noise files have been sorted.")
+                logger.info("All unsorted files have been processed into scenes.")
                 break
 
 def load_config(config_path: Path) -> dict:
