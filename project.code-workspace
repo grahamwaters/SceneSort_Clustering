@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Volumes/BigBoy/portugal trip 2025"
+		},
+		{
+			"path": "../../../../Volumes/BigBoy"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#062771",
+			"titleBar.activeBackground": "#09369E",
+			"titleBar.activeForeground": "#F9FBFF"
+		}
+	}
+}
