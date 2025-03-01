@@ -1,4 +1,4 @@
-# 📂 Enhanced Media Scene Sorter
+# 📂 Trip Media Sorter by Visual Scene Similarity
 
 [![Python](https://img.shields.io/badge/Python-3.7%2B-3776AB?logo=python&logoColor=white)](https://python.org)  
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org)  
