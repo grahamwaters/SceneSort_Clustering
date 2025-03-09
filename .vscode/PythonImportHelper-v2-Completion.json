@@ -9,6 +9,225 @@
         "documentation": {}
     },
     {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "librosa",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "librosa",
+        "description": "librosa",
+        "detail": "librosa",
+        "documentation": {}
+    },
+    {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Console",
+        "importPath": "rich.console",
+        "description": "rich.console",
+        "isExtraImport": true,
+        "detail": "rich.console",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "track",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -27,15 +246,6 @@
         "documentation": {}
     },
     {
-        "label": "shutil",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "shutil",
-        "description": "shutil",
-        "detail": "shutil",
-        "documentation": {}
-    },
-    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -51,6 +261,15 @@
         "importPath": "hashlib",
         "description": "hashlib",
         "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
         "documentation": {}
     },
     {
@@ -121,6 +340,54 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -158,6 +425,86 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -314,15 +661,6 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "yaml",
         "kind": 6,
         "isExtraImport": true,
@@ -420,6 +758,78 @@
         "documentation": {}
     },
     {
+        "label": "UnidentifiedImageError",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "UnidentifiedImageError",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "UnidentifiedImageError",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "tqdm",
         "importPath": "tqdm",
         "description": "tqdm",
@@ -495,91 +905,27 @@
         "documentation": {}
     },
     {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
+        "label": "HDBSCAN",
+        "importPath": "hdbscan",
+        "description": "hdbscan",
         "isExtraImport": true,
-        "detail": "sklearn.cluster",
+        "detail": "hdbscan",
         "documentation": {}
     },
     {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
+        "label": "HDBSCAN",
+        "importPath": "hdbscan",
+        "description": "hdbscan",
         "isExtraImport": true,
-        "detail": "sklearn.cluster",
+        "detail": "hdbscan",
         "documentation": {}
     },
     {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
+        "label": "HDBSCAN",
+        "importPath": "hdbscan",
+        "description": "hdbscan",
         "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "DBSCAN",
-        "importPath": "sklearn.cluster",
-        "description": "sklearn.cluster",
-        "isExtraImport": true,
-        "detail": "sklearn.cluster",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
+        "detail": "hdbscan",
         "documentation": {}
     },
     {
@@ -703,12 +1049,60 @@
         "documentation": {}
     },
     {
-        "label": "threading",
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "threading",
-        "description": "threading",
-        "detail": "threading",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
         "documentation": {}
     },
     {
@@ -733,6 +1127,357 @@
         "description": "main",
         "isExtraImport": true,
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "def preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.\n    Returns the path to the processed file.\n    \"\"\"\n    try:\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \".wav\")\n            if not os.path.exists(wav_path):  # Convert only if necessary\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "extract_features",
+        "kind": 2,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:  # Ignore very short files\n            console.print(f\"[bold yellow]Skipping short file:[/bold yellow] {file_path}\")\n            return None\n        mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)\n        return np.mean(mfcc, axis=1)\n    except Exception as e:\n        console.print(f\"[bold red]Error processing {file_path}:[/bold red] {e}\")",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "audio_folder",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "audio_folder = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\noutput_folder = os.path.join(os.path.dirname(audio_folder), \"AUDIO_CLUSTERS\")\nn_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "output_folder",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "output_folder = os.path.join(os.path.dirname(audio_folder), \"AUDIO_CLUSTERS\")\nn_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "n_clusters",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "n_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "console = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.\n    Returns the path to the processed file.",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "file_names",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "file_names = [\n    f for f in os.listdir(audio_folder)\n    if f.endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")\n]\nfeatures, valid_files = [], []\nconsole.print(\"[bold cyan]Preprocessing audio files...[/bold cyan]\")\nfor file in track(file_names, description=\"Cleaning & Converting\"):\n    file_path = os.path.join(audio_folder, file)\n    processed_path = preprocess_audio(file_path)\n    if processed_path:",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "features = np.array(features)\n# Scale the features\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "scaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "features_scaled",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "features_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "labels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):\n    cluster_dir = os.path.join(output_folder, f\"Cluster_{cluster_id}\")",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "clusters",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "clusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):\n    cluster_dir = os.path.join(output_folder, f\"Cluster_{cluster_id}\")\n    os.makedirs(cluster_dir, exist_ok=True)\n    for file in files:",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "table",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "table = Table(title=\"Audio Clustering Results\")\ntable.add_column(\"Cluster ID\", justify=\"center\", style=\"bold yellow\")\ntable.add_column(\"Audio Files\", style=\"bold magenta\")\nfor cluster_id, files in clusters.items():\n    table.add_row(str(cluster_id), \"\\n\".join(files))\nconsole.print(table)\nconsole.print(f\"[bold green]Clustered audio files saved in: {output_folder}[/bold green]\")",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "class MediaProcessor:\n    instance = None  # For signal handler access\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        # These variables store progress for checkpointing.\n        self.processed_files: List[Path] = []\n        self.features: List[Tuple[np.ndarray, float]] = []",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "save_progress",
+        "kind": 2,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "def save_progress(processed_files: List[Path], features: List[Tuple[np.ndarray, float]]):\n    \"\"\"Save progress to a pickle file.\"\"\"\n    try:\n        with open(CHECKPOINT_FILE, \"wb\") as pf:\n            pickle.dump({\"processed_files\": processed_files, \"features\": features}, pf)\n        logger.info(\"Checkpoint saved with %d files.\", len(processed_files))\n    except Exception as e:\n        logger.error(\"Failed to save checkpoint: %s\", e)\ndef signal_handler(signum, frame):\n    \"\"\"Handle termination signals by saving progress.\"\"\"",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "signal_handler",
+        "kind": 2,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "def signal_handler(signum, frame):\n    \"\"\"Handle termination signals by saving progress.\"\"\"\n    logger.info(\"Received termination signal. Saving progress before exit...\")\n    # If the processor instance exists, use its stored progress.\n    if MediaProcessor.instance is not None:\n        save_progress(MediaProcessor.instance.processed_files, MediaProcessor.instance.features)\n    sys.exit(0)\n# Register termination signals.\nsignal.signal(signal.SIGINT, signal_handler)\nsignal.signal(signal.SIGTERM, signal_handler)",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file, or return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\nprocess_large_files = False  # Updated via CLI\nfix_dates = False  # Updated via CLI\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files.\nprocess_large_files = False  # Updated via CLI\nfix_dates = False  # Updated via CLI\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "process_large_files = False  # Updated via CLI\nfix_dates = False  # Updated via CLI\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "fix_dates",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "fix_dates = False  # Updated via CLI\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # 'dbscan' or 'hdbscan'\n        'eps': 0.15,\n        'min_samples': 3,\n        'visual_weight': 0.7,\n        'temporal_weight': 0.3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "CHECKPOINT_FILE",
+        "kind": 5,
+        "importPath": "Untitled-2",
+        "description": "Untitled-2",
+        "peekOfCode": "CHECKPOINT_FILE = \"progress.pkl\"\ndef save_progress(processed_files: List[Path], features: List[Tuple[np.ndarray, float]]):\n    \"\"\"Save progress to a pickle file.\"\"\"\n    try:\n        with open(CHECKPOINT_FILE, \"wb\") as pf:\n            pickle.dump({\"processed_files\": processed_files, \"features\": features}, pf)\n        logger.info(\"Checkpoint saved with %d files.\", len(processed_files))\n    except Exception as e:\n        logger.error(\"Failed to save checkpoint: %s\", e)\ndef signal_handler(signum, frame):",
+        "detail": "Untitled-2",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        self.model_lock = None  # For thread safety (if needed)\n    def _load_model(self):\n        \"\"\"Load the CLIP model.\"\"\"\n        try:",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "get_unique_dest_path",
+        "kind": 2,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "def get_unique_dest_path(dest_dir: Path, filename: str) -> Path:\n    \"\"\"Ensure the destination filename is unique.\"\"\"\n    original_stem = Path(filename).stem\n    original_suffix = Path(filename).suffix\n    dest_path = dest_dir / filename\n    counter = 1\n    while dest_path.exists():\n        dest_path = dest_dir / f\"{original_stem}_{counter}{original_suffix}\"\n        counter += 1\n    return dest_path",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "ensure_file_downloaded",
+        "kind": 2,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "def ensure_file_downloaded(file: Path, min_size: int = 1024 * 1024):\n    \"\"\"\n    Ensure the iCloud file is fully downloaded.\n    If the file size is less than min_size (default 1MB), it triggers a download using 'brctl download'.\n    \"\"\"\n    try:\n        size = file.stat().st_size\n    except Exception as e:\n        logger.error(\"Could not stat file %s: %s\", file, e)\n        return",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "copy_icloud_raw_images",
+        "kind": 2,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "def copy_icloud_raw_images(icloud_path: Path, destination_path: Path):\n    \"\"\"\n    Traverse the iCloud folder and copy any RAW images (.rw2, .cr2, etc.)\n    to the external drive folder. This function forces a download for each file if necessary.\n    \"\"\"\n    if not icloud_path.exists() or not icloud_path.is_dir():\n        logger.error(f\"iCloud path {icloud_path} does not exist or is not a directory.\")\n        return\n    destination_path.mkdir(parents=True, exist_ok=True)\n    raw_files = []",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file if it exists; otherwise, return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "process_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8,  # .7",
+        "detail": "iCloudmain",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "iCloudmain",
+        "description": "iCloudmain",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8,  # .7\n        'temporal_weight': 0.2  # .3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "iCloudmain",
         "documentation": {}
     },
     {
@@ -850,6 +1595,114 @@
         "description": "main",
         "peekOfCode": "CHECKPOINT_FILE = \"progress.pkl\"\ndef save_progress(processed_files: List[Path], features: List[Tuple[np.ndarray, float]]):\n    \"\"\"Save checkpoint progress to a pickle file.\"\"\"\n    try:\n        with open(CHECKPOINT_FILE, \"wb\") as pf:\n            pickle.dump({\"processed_files\": processed_files, \"features\": features}, pf)\n        logger.info(\"Checkpoint saved with %d files.\", len(processed_files))\n    except Exception as e:\n        logger.error(\"Failed to save checkpoint: %s\", e)\ndef signal_handler(signum, frame):",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MediaProcessor",
+        "kind": 6,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "class MediaProcessor:\n    def __init__(self, config: dict):\n        self.config = config\n        self.device = \"cuda\" if torch.cuda.is_available() else \"cpu\"\n        self.model, self.preprocess = self._load_model()\n        self.file_hashes = set()\n        self.model_lock = None  # For thread safety (if needed)\n    def _load_model(self):\n        \"\"\"Load the CLIP model.\"\"\"\n        try:",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "get_unique_dest_path",
+        "kind": 2,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "def get_unique_dest_path(dest_dir: Path, filename: str) -> Path:\n    \"\"\"Ensure the destination filename is unique.\"\"\"\n    original_stem = Path(filename).stem\n    original_suffix = Path(filename).suffix\n    dest_path = dest_dir / filename\n    counter = 1\n    while dest_path.exists():\n        dest_path = dest_dir / f\"{original_stem}_{counter}{original_suffix}\"\n        counter += 1\n    return dest_path",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "ensure_file_downloaded",
+        "kind": 2,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "def ensure_file_downloaded(file: Path, min_size: int = 1024 * 1024):\n    \"\"\"\n    Ensure the iCloud file is fully downloaded.\n    If the file size is less than min_size (default 1MB), it triggers a download using 'brctl download'.\n    \"\"\"\n    try:\n        size = file.stat().st_size\n    except Exception as e:\n        logger.error(\"Could not stat file %s: %s\", file, e)\n        return",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "copy_icloud_raw_images",
+        "kind": 2,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "def copy_icloud_raw_images(icloud_path: Path, destination_path: Path):\n    \"\"\"\n    Traverse the iCloud folder and copy any RAW images (.rw2, .cr2, etc.)\n    to the external drive folder. This function forces a download for each file if necessary.\n    \"\"\"\n    if not icloud_path.exists() or not icloud_path.is_dir():\n        logger.error(f\"iCloud path {icloud_path} does not exist or is not a directory.\")\n        return\n    destination_path.mkdir(parents=True, exist_ok=True)\n    raw_files = []",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "def load_config(config_path: Path) -> dict:\n    \"\"\"Load configuration from a YAML file if it exists; otherwise, return the default config.\"\"\"\n    if config_path.exists():\n        try:\n            with open(config_path) as f:\n                loaded_config = yaml.safe_load(f)\n                return loaded_config\n        except Exception as e:\n            logger.error(\"Failed to load configuration file: %s\", e)\n    return DEFAULT_CONFIG",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".bmp\", \".gif\", \".tiff\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".avi\", \".mkv\", \".wmv\", \".flv\"}\nRAW_EXTENSIONS   = {\".raw\", \".cr2\", \".nef\", \".dng\", \".arw\", \".rw2\"}\n# Global flag to control processing of large files (set via CLI)\nprocess_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "process_large_files",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "process_large_files = False\n# --- Logging Setup ---\nlogging.basicConfig(\n    level=logging.INFO,\n    format=\"%(asctime)s - %(levelname)s - %(message)s\",\n    handlers=[\n        logging.FileHandler(\"media_sorter.log\"),\n        logging.StreamHandler()\n    ]\n)",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nerror_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "error_handler",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "error_handler = logging.FileHandler(\"error.log\", mode=\"a\")\nerror_handler.setLevel(logging.WARNING)\nerror_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "error_formatter",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "error_formatter = logging.Formatter(\"%(asctime)s - %(levelname)s - %(message)s\")\nerror_handler.setFormatter(error_formatter)\nlogger.addHandler(error_handler)\n# Default configuration\nDEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8,  # .7",
+        "detail": "main2",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG",
+        "kind": 5,
+        "importPath": "main2",
+        "description": "main2",
+        "peekOfCode": "DEFAULT_CONFIG = {\n    'clustering': {\n        'algorithm': 'hdbscan',  # Options: 'dbscan' or 'hdbscan'\n        'eps': 0.19,  # was 0.15\n        'min_samples': 3,\n        'visual_weight': 0.8,  # .7\n        'temporal_weight': 0.2  # .3\n    },\n    'processing': {\n        'batch_size': 32,",
+        "detail": "main2",
         "documentation": {}
     },
     {

@@ -34634,3 +34634,16 @@
 2025-02-03 15:40:30,638 - WARNING - No valid frames extracted from /Volumes/IDISKK/2018/3/week_3/MPEG-4 movie/MP4/128_PANA-1_P1280590_Extracted_36_2018-03-13.MP4
 2025-02-03 15:40:34,051 - WARNING - No valid frames extracted from /Volumes/IDISKK/2018/3/week_3/MPEG-4 movie/MP4/128_PANA-1_P1280591_Extracted_37_2018-03-13.MP4
 2025-02-03 15:40:38,107 - WARNING - No valid frames extracted from /Volumes/IDISKK/2018/3/week_3/MPEG-4 movie/MP4/128_PANA-1_P1280616_Extracted_62_2018-03-13.MP4
+2025-02-22 18:26:27,248 - ERROR - iCloud path /Users/watersterminal/Library/Mobile Documents/comappleCloudDocs does not exist or is not a directory.
+2025-02-22 18:26:50,989 - ERROR - iCloud path /Users/watersterminal/Library/Mobile Documents/comappleCloudDocs does not exist or is not a directory.
+2025-02-22 18:30:56,692 - ERROR - iCloud path /Users/watersterminal/Library/Mobile Documents/comappleCloudDocs does not exist or is not a directory.
+2025-02-22 18:30:59,566 - WARNING - No valid visual features extracted, skipping clustering.
+2025-02-22 18:32:44,159 - ERROR - iCloud path /Users/watersterminal/Library/Mobile Documents/comappleCloudDocs does not exist or is not a directory.
+2025-02-22 18:32:47,024 - WARNING - No valid visual features extracted, skipping clustering.
+2025-02-22 18:36:14,048 - ERROR - iCloud path /Users/watersterminal/Library/Mobile Documents/comappleCloudDocs does not exist or is not a directory.
+2025-02-22 18:36:17,221 - WARNING - No valid visual features extracted, skipping clustering.
+2025-02-26 22:51:10,855 - ERROR - iCloud path /Volumes/Graham's\ Backup\ Drive\ 4TB does not exist or is not a directory.
+2025-02-26 22:57:09,773 - WARNING - No valid visual features extracted, skipping clustering.
+2025-02-26 22:58:25,051 - ERROR - iCloud path /Volumes/Graham's\ Backup\ Drive\ 4TB does not exist or is not a directory.
+2025-02-26 22:58:27,482 - WARNING - No valid visual features extracted, skipping clustering.
+2025-02-26 22:59:02,409 - ERROR - iCloud path /Volumes/Graham's\ Backup\ Drive\ 4TB does not exist or is not a directory.
