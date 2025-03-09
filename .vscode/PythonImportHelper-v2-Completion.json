@@ -1831,7 +1831,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_grok_updates",
         "description": "audio.audio_cluster_grok_updates",
-        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")\n            return None, None",
+        "peekOfCode": "def extract_features(file_path):\n    if '._' in file_path:\n        console.print(f\"[bold red]'._' detected[/bold red]\")\n        return None, None\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        rms = np.mean(librosa.feature.rms(y=y))",
         "detail": "audio.audio_cluster_grok_updates",
         "documentation": {}
     },

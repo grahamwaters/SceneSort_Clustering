@@ -114,6 +114,10 @@ def preprocess_audio(file_path):
 
 # Advanced feature extraction
 def extract_features(file_path):
+    if '._' in file_path:
+        console.print(f"[bold red]'._' detected[/bold red]")
+        return None, None
+
     try:
         y, sr = librosa.load(file_path, sr=None)
         if len(y) < 512:
@@ -130,28 +134,49 @@ def extract_features(file_path):
         features = []
 
         try:
+            console.print(f"\t[cyan]Processing file:[/cyan] {file_path}")
+
             # Reduced to 13 MFCCs (standard practice)
             mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13, n_fft=n_fft), axis=1)
-            chroma = np.mean(librosa.feature.chroma_stft(y=y, sr=sr, n_fft=n_fft), axis=1) if np.any(y) else np.zeros(12)
-            spec_centroid = np.mean(librosa.feature.spectral_centroid(y=y, sr=sr, n_fft=n_fft))
-            spec_flatness = np.mean(librosa.feature.spectral_flatness(y=y, n_fft=n_fft))
-            spec_contrast = np.mean(librosa.feature.spectral_contrast(y=y, sr=sr, n_fft=n_fft), axis=1) if len(y) >= n_fft else np.zeros(7)
-            tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
-            onset_env = np.mean(librosa.onset.onset_strength(y=y, sr=sr, n_fft=n_fft))
+            console.print(f"\t[green]Extracted MFCCs:[/green] {mfcc.shape}")
 
-            features = np.concatenate((
-                mfcc, chroma,
-                [spec_centroid, spec_flatness, rms, zero_crossing, tempo],
-                spec_contrast
-            ))
+            chroma = np.mean(librosa.feature.chroma_stft(y=y, sr=sr, n_fft=n_fft), axis=1) if np.any(y) else np.zeros(12)
+            console.print(f"\t[green]Extracted Chroma:[/green] {chroma.shape}")
+
+            spec_centroid = np.mean(librosa.feature.spectral_centroid(y=y, sr=sr, n_fft=n_fft))
+            console.print(f"\t[green]Extracted Spectral Centroid:[/green] {spec_centroid}")
+
+            spec_flatness = np.mean(librosa.feature.spectral_flatness(y=y, n_fft=n_fft))
+            console.print(f"\t[green]Extracted Spectral Flatness:[/green] {spec_flatness}")
+
+            spec_contrast = np.mean(librosa.feature.spectral_contrast(y=y, sr=sr, n_fft=n_fft), axis=1) if len(y) >= n_fft else np.zeros(7)
+            console.print(f"\t[green]Extracted Spectral Contrast:[/green] {spec_contrast.shape}")
+
+            tempo_array, _ = librosa.beat.beat_track(y=y, sr=sr)
+            tempo = tempo_array[0] if tempo_array.size > 0 else 0.0  # Extract scalar, default to 0 if empty
+            console.print(f"\t[green]Extracted Tempo:[/green] {tempo}")
+
+            onset_env = np.mean(librosa.onset.onset_strength(y=y, sr=sr, n_fft=n_fft))
+            console.print(f"\t[green]Extracted Onset Envelope:[/green] {onset_env}")
+
+            # Ensure middle section is a flat array
+            middle_features = np.array([spec_centroid, spec_flatness, rms, zero_crossing, tempo])
+            console.print(f"\t[green]Middle Features Shape:[/green] {middle_features.shape}")
+
+            features = np.concatenate((mfcc, chroma, middle_features, spec_contrast))
+            console.print(f"\t[blue]Final feature vector shape:[/blue] {features.shape}")
+
+            # Adjust feature vector length if needed
             if len(features) != EXPECTED_FEATURE_DIM:
-                console.print(f"[yellow]Adjusting features for {file_path}:[/yellow] Expected {EXPECTED_FEATURE_DIM}, got {len(features)}")
+                console.print(f"\t[yellow]Adjusting features for {file_path}:[/yellow] Expected {EXPECTED_FEATURE_DIM}, got {len(features)}")
                 features = np.pad(features, (0, EXPECTED_FEATURE_DIM - len(features)), 'constant') if len(features) < EXPECTED_FEATURE_DIM else features[:EXPECTED_FEATURE_DIM]
+
         except Exception as e:
-            console.print(f"[yellow]Using fallback features for {file_path}:[/yellow] {e}")
+            console.print(f"\t[red]Error extracting features for {file_path}:[/red] {e}")
+            console.print(f"\t[yellow]Using fallback features for {file_path}[/yellow]")
             features = np.zeros(EXPECTED_FEATURE_DIM)
-            features[13+12+2] = rms  # Index 27
-            features[13+12+3] = zero_crossing  # Index 28
+            features[13 + 12 + 2] = rms  # Index 27
+            features[13 + 12 + 3] = zero_crossing  # Index 28
 
         console.print(f"[cyan]Features for {file_path}:[/cyan] Length = {len(features)}")
         return features, file_path
