@@ -46,7 +46,8 @@ OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), "AUDIO_CLUSTERS")
 MAX_CLUSTERS_DEFAULT = 12
 MIN_DURATION = 0.5
 MIN_AMPLITUDE = 0.001
-KEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals
+KEEP_ORIGINALS = True  # Preserve originals for debugging
+MAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload
 
 # Ensure FFmpeg is installed
 if shutil.which("ffmpeg") is None:
@@ -61,7 +62,7 @@ def validate_audio(file_path, check_content=False):
             stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False
         )
         if result.returncode != 0:
-            raise ValueError("FFmpeg validation failed")
+            raise ValueError(f"FFmpeg validation failed: {result.stderr.decode()}")
 
         duration_line = [line for line in result.stderr.decode().splitlines() if "Duration" in line]
         if not duration_line:
@@ -86,21 +87,26 @@ def validate_audio(file_path, check_content=False):
 # Preprocess audio files
 def preprocess_audio(file_path):
     try:
-        # Check original file content
+        console.print(f"[cyan]Processing {file_path}...[/cyan]")
         if not validate_audio(file_path, check_content=True):
             return None
         if file_path.lower().endswith(".mp3"):
             wav_path = file_path.replace(".mp3", "_temp.wav")
             if not os.path.exists(wav_path):
-                audio = AudioSegment.from_file(file_path, format="mp3")
-                audio = audio.set_channels(1).set_frame_rate(22050)
-                audio.export(wav_path, format="wav")
-                console.print(f"[cyan]Converted {file_path} to {wav_path}[/cyan]")
+                # Use subprocess for FFmpeg directly to catch errors
+                result = subprocess.run(
+                    ['ffmpeg', '-i', file_path, '-ac', '1', '-ar', '22050', wav_path],
+                    stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=True
+                )
+                console.print(f"[cyan]Converted {file_path} to {wav_path}:[/cyan] {result.stderr.decode().strip()}")
                 if not validate_audio(wav_path, check_content=True):
                     os.remove(wav_path)
                     return None
             return wav_path
         return file_path
+    except subprocess.CalledProcessError as e:
+        console.print(f"[bold red]FFmpeg failed for {file_path}:[/bold red] {e.stderr.decode()}")
+        return None
     except Exception as e:
         console.print(f"[bold red]Failed to preprocess {file_path}:[/bold red] {e}")
         return None
@@ -193,7 +199,7 @@ def process_audio_files():
         sys.exit(1)
     console.print(f"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]")
 
-    # Preprocessing
+    # Preprocessing (sequential for debugging)
     with Progress(
         TextColumn("[progress.description]{task.description}"),
         BarColumn(),
@@ -203,13 +209,20 @@ def process_audio_files():
     ) as progress:
         task1 = progress.add_task("[cyan]Preprocessing Audio", total=len(file_names))
         processed_files = []
-        with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-            futures = {executor.submit(preprocess_audio, os.path.join(AUDIO_FOLDER, f)): f for f in file_names}
-            for future in as_completed(futures):
-                result = future.result()
-                if result:
-                    processed_files.append(result)
-                progress.advance(task1)
+        # Comment out ThreadPoolExecutor for sequential processing to isolate crash
+        for f in file_names:
+            result = preprocess_audio(os.path.join(AUDIO_FOLDER, f))
+            if result:
+                processed_files.append(result)
+            progress.advance(task1)
+        # Uncomment below for parallel processing after debugging
+        # with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        #     futures = {executor.submit(preprocess_audio, os.path.join(AUDIO_FOLDER, f)): f for f in file_names}
+        #     for future in as_completed(futures):
+        #         result = future.result()
+        #         if result:
+        #             processed_files.append(result)
+        #         progress.advance(task1)
 
     if not processed_files:
         console.print("[bold red]No valid audio files after preprocessing![/bold red]")
@@ -226,7 +239,7 @@ def process_audio_files():
         console=console
     ) as progress:
         task2 = progress.add_task("[yellow]Extracting Advanced Features", total=len(processed_files))
-        with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {executor.submit(extract_features, f): f for f in processed_files}
             for future in as_completed(futures):
                 feat, file = future.result()
@@ -261,7 +274,7 @@ def process_audio_files():
     # Move files with live display
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     with Live(generate_cluster_layout(clusters), refresh_per_second=10, console=console) as live:
-        with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = []
             move_func = shutil.copy2 if KEEP_ORIGINALS else shutil.move
             for cluster_id, files in clusters.items():

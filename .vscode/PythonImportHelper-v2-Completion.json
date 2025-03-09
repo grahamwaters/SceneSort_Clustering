@@ -1517,7 +1517,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        duration_line = [line for line in result.stderr.decode().splitlines() if \"Duration\" in line]\n        if not duration_line:",
+        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(f\"FFmpeg validation failed: {result.stderr.decode()}\")\n        duration_line = [line for line in result.stderr.decode().splitlines() if \"Duration\" in line]\n        if not duration_line:",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1526,7 +1526,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        # Check original file content\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        console.print(f\"[cyan]Processing {file_path}...[/cyan]\")\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                # Use subprocess for FFmpeg directly to catch errors\n                result = subprocess.run(",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1562,7 +1562,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing (sequential for debugging)",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1589,7 +1589,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1598,7 +1598,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1607,7 +1607,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
+        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1616,7 +1616,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
+        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1625,7 +1625,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1634,7 +1634,16 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "KEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
+        "peekOfCode": "KEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_WORKERS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "MAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
