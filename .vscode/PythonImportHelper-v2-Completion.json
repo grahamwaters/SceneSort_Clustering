@@ -44,19 +44,11 @@
         "documentation": {}
     },
     {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
         "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
+        "detail": "pydub",
         "documentation": {}
     },
     {
@@ -185,6 +177,46 @@
         "description": "concurrent.futures",
         "isExtraImport": true,
         "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
         "documentation": {}
     },
     {
@@ -340,6 +372,22 @@
         "documentation": {}
     },
     {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "silhouette_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "silhouette_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
@@ -353,6 +401,22 @@
         "description": "scipy.stats",
         "isExtraImport": true,
         "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "skew",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
         "documentation": {}
     },
     {
@@ -378,6 +442,22 @@
         "description": "rich.console",
         "isExtraImport": true,
         "detail": "rich.console",
+        "documentation": {}
+    },
+    {
+        "label": "Console",
+        "importPath": "rich.console",
+        "description": "rich.console",
+        "isExtraImport": true,
+        "detail": "rich.console",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
         "documentation": {}
     },
     {
@@ -421,11 +501,59 @@
         "documentation": {}
     },
     {
+        "label": "Progress",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "BarColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TextColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TimeRemainingColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
         "label": "Live",
         "importPath": "rich.live",
         "description": "rich.live",
         "isExtraImport": true,
         "detail": "rich.live",
+        "documentation": {}
+    },
+    {
+        "label": "Live",
+        "importPath": "rich.live",
+        "description": "rich.live",
+        "isExtraImport": true,
+        "detail": "rich.live",
+        "documentation": {}
+    },
+    {
+        "label": "Panel",
+        "importPath": "rich.panel",
+        "description": "rich.panel",
+        "isExtraImport": true,
+        "detail": "rich.panel",
         "documentation": {}
     },
     {
@@ -445,6 +573,22 @@
         "documentation": {}
     },
     {
+        "label": "Text",
+        "importPath": "rich.text",
+        "description": "rich.text",
+        "isExtraImport": true,
+        "detail": "rich.text",
+        "documentation": {}
+    },
+    {
+        "label": "Layout",
+        "importPath": "rich.layout",
+        "description": "rich.layout",
+        "isExtraImport": true,
+        "detail": "rich.layout",
+        "documentation": {}
+    },
+    {
         "label": "Layout",
         "importPath": "rich.layout",
         "description": "rich.layout",
@@ -458,6 +602,14 @@
         "isExtraImport": true,
         "importPath": "time",
         "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
         "detail": "time",
         "documentation": {}
     },
@@ -488,21 +640,21 @@
         "documentation": {}
     },
     {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
         "documentation": {}
     },
     {
@@ -1239,7 +1391,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        # Extract duration",
+        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        duration_line = [line for line in result.stderr.decode().splitlines() if \"Duration\" in line]\n        if not duration_line:",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1248,7 +1400,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        if not validate_audio(file_path):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)\n                audio.export(wav_path, format=\"wav\")",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        # Check original file content\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1257,7 +1409,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        # Check for audio content\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")\n            return None, None",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1266,7 +1418,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS):\n    if len(features_scaled) < 2:\n        return 1\n    silhouette_scores = []\n    max_k = min(max_k + 1, len(features_scaled))\n    for k in range(2, max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
+        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS_DEFAULT):\n    if len(features_scaled) < 2:\n        return 1\n    max_k = min(int(np.sqrt(len(features_scaled))) + 1, max_k + 1, len(features_scaled))\n    silhouette_scores = []\n    for k in range(2, max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1284,7 +1436,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    # Preprocessing\n    with Progress(",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1293,7 +1445,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "console = Console()\n# ASCII Art\nBANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝",
+        "peekOfCode": "console = Console()\nlogging.basicConfig(level=logging.INFO, format=\"%(message)s\", handlers=[logging.StreamHandler()])\n# ASCII Art\nBANNER = \"\"\"\n[bold cyan]\n    ██████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1302,7 +1454,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n[/bold cyan]\n\"\"\"",
+        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    ██████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n    2025, Graham Waters\n[/bold cyan]",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1311,7 +1463,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1320,16 +1472,16 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "MAX_CLUSTERS",
+        "label": "MAX_CLUSTERS_DEFAULT",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "MAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
+        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1338,7 +1490,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "MIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration",
+        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1347,8 +1499,161 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "MIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
         "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "KEEP_ORIGINALS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "KEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "validate_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        duration_line = [line for line in result.stderr.decode().splitlines() if \"Duration\" in line]\n        if not duration_line:",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "generate_preprocess_table",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def generate_preprocess_table(valid_files, skipped_files):\n    table = Table(title=\"Preprocessing Status\", title_style=\"bold cyan\", border_style=\"bright_green\")\n    table.add_column(\"VALID\", justify=\"center\", style=\"bold green\")\n    table.add_column(\"SKIPPED\", justify=\"center\", style=\"bold yellow\")\n    valid_display = \"\\n\".join(valid_files[-5:]) + (\"\\n...\" if len(valid_files) > 5 else \"\")\n    skipped_display = \"\\n\".join(skipped_files[-5:]) + (\"\\n...\" if len(skipped_files) > 5 else \"\")\n    table.add_row(\n        f\"{len(valid_files)}\\n{valid_display}\",\n        f\"{len(skipped_files)}\\n{skipped_display}\"\n    )",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "generate_preprocess_layout",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def generate_preprocess_layout(valid_files, skipped_files, progress):\n    layout = Layout()\n    layout.split_column(\n        Layout(name=\"table\", size=10),  # Adjust size as needed\n        Layout(name=\"progress\")\n    )\n    layout[\"table\"].update(generate_preprocess_table(valid_files, skipped_files))\n    layout[\"progress\"].update(progress)\n    return layout\n# Preprocess audio files with live table",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def preprocess_audio(file_path, valid_files, skipped_files):\n    try:\n        if not validate_audio(file_path, check_content=True):\n            skipped_files.append(os.path.basename(file_path))\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "extract_features",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")\n            return None, None",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "find_optimal_clusters",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS_DEFAULT):\n    if len(features_scaled) < 2:\n        return 1\n    max_k = min(int(np.sqrt(len(features_scaled))) + 1, max_k + 1, len(features_scaled))\n    silhouette_scores = []\n    for k in range(2, max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "generate_cluster_layout",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def generate_cluster_layout(clusters):\n    layout = Layout()\n    layout.split_column(\n        Layout(name=\"header\", size=3),\n        Layout(name=\"clusters\")\n    )\n    layout[\"header\"].update(Panel(Text(\"Clustering in Progress\", style=\"bold cyan\", justify=\"center\")))\n    cluster_panels = []\n    colors = [\"blue\", \"green\", \"yellow\", \"magenta\", \"cyan\", \"red\", \"white\", \"bright_blue\"]\n    for cluster_id, files in clusters.items():",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "process_audio_files",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing with combined live table and progress",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "console = Console()\nlogging.basicConfig(level=logging.INFO, format=\"%(message)s\", handlers=[logging.StreamHandler()])\n# ASCII Art\nBANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "BANNER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n    2025, Graham Waters\n[/bold cyan]",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "AUDIO_FOLDER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_CLUSTERS_DEFAULT",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_DURATION",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_AMPLITUDE",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "KEEP_ORIGINALS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "KEEP_ORIGINALS = False  # Set to True to copy instead of move, preserving originals\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
+        "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
     {

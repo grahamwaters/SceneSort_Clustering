@@ -30,7 +30,7 @@ logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[logging.
 # ASCII Art
 BANNER = """
 [bold cyan]
-    ██████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗
+    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗
     ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗
     ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝
     ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗
@@ -77,17 +77,41 @@ def validate_audio(file_path, check_content=False):
             rms = np.mean(librosa.feature.rms(y=y))
             if rms < MIN_AMPLITUDE:
                 raise ValueError(f"No audible content (RMS: {rms:.6f})")
-            console.print(f"[cyan]Validated {file_path}:[/cyan] RMS = {rms:.6f}, Size = {os.path.getsize(file_path) / 1024:.2f} KB")
         return True
     except Exception as e:
-        console.print(f"[yellow]Skipping {file_path}:[/yellow] {str(e)}")
         return False
 
-# Preprocess audio files
-def preprocess_audio(file_path):
+# Generate preprocessing status table
+def generate_preprocess_table(valid_files, skipped_files):
+    table = Table(title="Preprocessing Status", title_style="bold cyan", border_style="bright_green")
+    table.add_column("VALID", justify="center", style="bold green")
+    table.add_column("SKIPPED", justify="center", style="bold yellow")
+
+    valid_display = "\n".join(valid_files[-5:]) + ("\n..." if len(valid_files) > 5 else "")
+    skipped_display = "\n".join(skipped_files[-5:]) + ("\n..." if len(skipped_files) > 5 else "")
+
+    table.add_row(
+        f"{len(valid_files)}\n{valid_display}",
+        f"{len(skipped_files)}\n{skipped_display}"
+    )
+    return table
+
+# Combined layout for preprocessing
+def generate_preprocess_layout(valid_files, skipped_files, progress):
+    layout = Layout()
+    layout.split_column(
+        Layout(name="table", size=10),  # Adjust size as needed
+        Layout(name="progress")
+    )
+    layout["table"].update(generate_preprocess_table(valid_files, skipped_files))
+    layout["progress"].update(progress)
+    return layout
+
+# Preprocess audio files with live table
+def preprocess_audio(file_path, valid_files, skipped_files):
     try:
-        # Check original file content
         if not validate_audio(file_path, check_content=True):
+            skipped_files.append(os.path.basename(file_path))
             return None
         if file_path.lower().endswith(".mp3"):
             wav_path = file_path.replace(".mp3", "_temp.wav")
@@ -95,14 +119,16 @@ def preprocess_audio(file_path):
                 audio = AudioSegment.from_file(file_path, format="mp3")
                 audio = audio.set_channels(1).set_frame_rate(22050)
                 audio.export(wav_path, format="wav")
-                console.print(f"[cyan]Converted {file_path} to {wav_path}[/cyan]")
                 if not validate_audio(wav_path, check_content=True):
                     os.remove(wav_path)
+                    skipped_files.append(os.path.basename(file_path))
                     return None
+            valid_files.append(os.path.basename(wav_path))
             return wav_path
+        valid_files.append(os.path.basename(file_path))
         return file_path
     except Exception as e:
-        console.print(f"[bold red]Failed to preprocess {file_path}:[/bold red] {e}")
+        skipped_files.append(os.path.basename(file_path))
         return None
 
 # Advanced feature extraction with fallback
@@ -139,7 +165,6 @@ def extract_features(file_path):
                 [spec_centroid, spec_flatness, spec_contrast, zero_crossing, rms, tempo, onset_env],
                 tonnetz
             ))
-            console.print()
         except Exception as e:
             console.print(f"[yellow]Using fallback features for {file_path}:[/yellow] {e}")
 
@@ -194,7 +219,9 @@ def process_audio_files():
         sys.exit(1)
     console.print(f"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]")
 
-    # Preprocessing
+    # Preprocessing with combined live table and progress
+    valid_files = []
+    skipped_files = []
     with Progress(
         TextColumn("[progress.description]{task.description}"),
         BarColumn(),
@@ -203,14 +230,16 @@ def process_audio_files():
         console=console
     ) as progress:
         task1 = progress.add_task("[cyan]Preprocessing Audio", total=len(file_names))
-        processed_files = []
-        with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-            futures = {executor.submit(preprocess_audio, os.path.join(AUDIO_FOLDER, f)): f for f in file_names}
-            for future in as_completed(futures):
-                result = future.result()
-                if result:
-                    processed_files.append(result)
-                progress.advance(task1)
+        with Live(generate_preprocess_layout(valid_files, skipped_files, progress), refresh_per_second=10, console=console) as live:
+            processed_files = []
+            with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+                futures = {executor.submit(preprocess_audio, os.path.join(AUDIO_FOLDER, f), valid_files, skipped_files): f for f in file_names}
+                for future in as_completed(futures):
+                    result = future.result()
+                    if result:
+                        processed_files.append(result)
+                    progress.advance(task1)
+                    live.update(generate_preprocess_layout(valid_files, skipped_files, progress))
 
     if not processed_files:
         console.print("[bold red]No valid audio files after preprocessing![/bold red]")
@@ -316,7 +345,8 @@ def process_audio_files():
         table.add_row(
             f"{cluster_id:02d}",
             str(len(files)),
-            "\n".join(files[:5]) + ("..." if len(files) > 5 else ""))
+            "\n".join(files[:5]) + ("..." if len(files) > 5 else "")
+        )
 
     console.print("\n", table)
     console.print("\n", cluster_summary)
