@@ -35,7 +35,6 @@ BANNER = """
     ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗
     ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║
     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-    2025, Graham Waters
 [/bold cyan]
 """
 
@@ -44,14 +43,15 @@ AUDIO_FOLDER = "/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED"
 OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), "AUDIO_CLUSTERS")
 MAX_CLUSTERS = 12
 MIN_DURATION = 0.5  # Minimum audio duration in seconds
+MIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present
 
 # Ensure ffmpeg is installed
 if shutil.which("ffmpeg") is None:
     console.print("[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.")
     sys.exit(1)
 
-# Validate audio file integrity
-def validate_audio(file_path):
+# Validate audio file integrity and content
+def validate_audio(file_path, check_content=False):
     try:
         # Use FFmpeg to check file integrity and duration
         result = subprocess.run(
@@ -61,14 +61,23 @@ def validate_audio(file_path):
         if result.returncode != 0:
             raise ValueError("FFmpeg validation failed")
 
-        # Extract duration from FFmpeg output
+        # Extract duration
         duration_line = [line for line in result.stderr.decode().splitlines() if "Duration" in line]
-        if duration_line:
-            duration_str = duration_line[0].split("Duration: ")[1].split(",")[0]
-            h, m, s = map(float, duration_str.split(":"))
-            duration = h * 3600 + m * 60 + s
-            if duration < MIN_DURATION:
-                raise ValueError(f"Audio too short: {duration:.2f}s")
+        if not duration_line:
+            raise ValueError("No duration info available")
+        duration_str = duration_line[0].split("Duration: ")[1].split(",")[0]
+        h, m, s = map(float, duration_str.split(":"))
+        duration = h * 3600 + m * 60 + s
+        if duration < MIN_DURATION:
+            raise ValueError(f"Audio too short: {duration:.2f}s")
+
+        # Optionally check for audio content
+        if check_content:
+            y, sr = librosa.load(file_path, sr=None)
+            rms = np.mean(librosa.feature.rms(y=y))
+            if rms < MIN_AMPLITUDE:
+                raise ValueError(f"No audible content (RMS: {rms:.6f})")
+
         return True
     except Exception as e:
         console.print(f"[yellow]Skipping {file_path}:[/yellow] {str(e)}")
@@ -85,6 +94,10 @@ def preprocess_audio(file_path):
                 audio = AudioSegment.from_file(file_path, format="mp3")
                 audio = audio.set_channels(1).set_frame_rate(22050)
                 audio.export(wav_path, format="wav")
+                # Validate the output WAV file
+                if not validate_audio(wav_path, check_content=True):
+                    os.remove(wav_path)
+                    return None
             return wav_path
         return file_path
     except Exception as e:
@@ -99,10 +112,15 @@ def extract_features(file_path):
             console.print(f"[yellow]Skipping {file_path}:[/yellow] Too short")
             return None, None
 
+        # Check for audio content
+        rms = np.mean(librosa.feature.rms(y=y))
+        if rms < MIN_AMPLITUDE:
+            console.print(f"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})")
+            return None, None
+
         # Basic features as fallback
-        rmse = np.mean(librosa.feature.rms(y=y))
         zero_crossing = np.mean(librosa.feature.zero_crossing_rate(y))
-        features = [rmse, zero_crossing]
+        features = [rms, zero_crossing]
 
         # Try advanced features
         try:
@@ -194,6 +212,10 @@ def process_audio_files():
                     processed_files.append(result)
                 progress.advance(task1)
 
+    if not processed_files:
+        console.print("[bold red]No valid audio files after preprocessing![/bold red]")
+        sys.exit(1)
+
     # Feature Extraction
     features, valid_files = [], []
     with Progress(
@@ -246,7 +268,11 @@ def process_audio_files():
                 for file in files:
                     src = os.path.join(AUDIO_FOLDER, file)
                     dst = os.path.join(cluster_dir, file)
-                    futures.append(executor.submit(shutil.move, src, dst))
+                    # Verify destination file has audio before moving
+                    if os.path.exists(src) and validate_audio(src, check_content=True):
+                        futures.append(executor.submit(shutil.move, src, dst))
+                    else:
+                        console.print(f"[yellow]Not moving {src}:[/yellow] No audio content")
             for _ in as_completed(futures):
                 sleep(0.05)
                 live.update(generate_cluster_layout(clusters))

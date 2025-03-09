@@ -1239,7 +1239,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        # Extract duration from FFmpeg output",
+        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        # Extract duration",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1257,7 +1257,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        # Basic features as fallback\n        rmse = np.mean(librosa.feature.rms(y=y))\n        zero_crossing = np.mean(librosa.feature.zero_crossing_rate(y))\n        features = [rmse, zero_crossing]",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        # Check for audio content\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1302,7 +1302,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n    2025, Graham Waters\n[/bold cyan]",
+        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n[/bold cyan]\n\"\"\"",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1311,7 +1311,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1320,7 +1320,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1329,7 +1329,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "MAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration",
+        "peekOfCode": "MAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1338,7 +1338,16 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "MIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(",
+        "peekOfCode": "MIN_DURATION = 0.5  # Minimum audio duration in seconds\nMIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_AMPLITUDE",
+        "kind": 5,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001  # Minimum RMS amplitude to consider audio present\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
