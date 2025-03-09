@@ -1522,29 +1522,11 @@
         "documentation": {}
     },
     {
-        "label": "generate_preprocess_table",
-        "kind": 2,
-        "importPath": "audio.audio_cluster_final",
-        "description": "audio.audio_cluster_final",
-        "peekOfCode": "def generate_preprocess_table(valid_files, skipped_files):\n    table = Table(title=\"Preprocessing Status\", title_style=\"bold cyan\", border_style=\"bright_green\")\n    table.add_column(\"VALID\", justify=\"center\", style=\"bold green\")\n    table.add_column(\"SKIPPED\", justify=\"center\", style=\"bold yellow\")\n    valid_display = \"\\n\".join(valid_files[-5:]) + (\"\\n...\" if len(valid_files) > 5 else \"\")\n    skipped_display = \"\\n\".join(skipped_files[-5:]) + (\"\\n...\" if len(skipped_files) > 5 else \"\")\n    table.add_row(\n        f\"{len(valid_files)}\\n{valid_display}\",\n        f\"{len(skipped_files)}\\n{skipped_display}\"\n    )",
-        "detail": "audio.audio_cluster_final",
-        "documentation": {}
-    },
-    {
-        "label": "generate_preprocess_layout",
-        "kind": 2,
-        "importPath": "audio.audio_cluster_final",
-        "description": "audio.audio_cluster_final",
-        "peekOfCode": "def generate_preprocess_layout(valid_files, skipped_files, progress):\n    layout = Layout()\n    layout.split_column(\n        Layout(name=\"table\", size=10),  # Adjust size as needed\n        Layout(name=\"progress\")\n    )\n    layout[\"table\"].update(generate_preprocess_table(valid_files, skipped_files))\n    layout[\"progress\"].update(progress)\n    return layout\n# Preprocess audio files with live table",
-        "detail": "audio.audio_cluster_final",
-        "documentation": {}
-    },
-    {
         "label": "preprocess_audio",
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def preprocess_audio(file_path, valid_files, skipped_files):\n    try:\n        if not validate_audio(file_path, check_content=True):\n            skipped_files.append(os.path.basename(file_path))\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        # Check original file content\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1580,7 +1562,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing with combined live table and progress",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
