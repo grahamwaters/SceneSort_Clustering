@@ -52,6 +52,30 @@
         "documentation": {}
     },
     {
+        "label": "AudioSegment",
+        "importPath": "pydub",
+        "description": "pydub",
+        "isExtraImport": true,
+        "detail": "pydub",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
         "label": "ThreadPoolExecutor",
         "importPath": "concurrent.futures",
         "description": "concurrent.futures",
@@ -228,7 +252,7 @@
         "documentation": {}
     },
     {
-        "label": "DBSCAN",
+        "label": "KMeans",
         "importPath": "sklearn.cluster",
         "description": "sklearn.cluster",
         "isExtraImport": true,
@@ -297,6 +321,22 @@
         "description": "sklearn.cluster",
         "isExtraImport": true,
         "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
@@ -396,6 +436,14 @@
         "documentation": {}
     },
     {
+        "label": "silhouette_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "skew",
         "importPath": "scipy.stats",
         "description": "scipy.stats",
@@ -409,6 +457,14 @@
         "description": "scipy.stats",
         "isExtraImport": true,
         "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
         "documentation": {}
     },
     {
@@ -453,6 +509,14 @@
         "documentation": {}
     },
     {
+        "label": "Console",
+        "importPath": "rich.console",
+        "description": "rich.console",
+        "isExtraImport": true,
+        "detail": "rich.console",
+        "documentation": {}
+    },
+    {
         "label": "Table",
         "importPath": "rich.table",
         "description": "rich.table",
@@ -466,6 +530,46 @@
         "description": "rich.table",
         "isExtraImport": true,
         "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "rich.table",
+        "description": "rich.table",
+        "isExtraImport": true,
+        "detail": "rich.table",
+        "documentation": {}
+    },
+    {
+        "label": "Progress",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "BarColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TextColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TimeRemainingColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
         "documentation": {}
     },
     {
@@ -549,6 +653,22 @@
         "documentation": {}
     },
     {
+        "label": "Live",
+        "importPath": "rich.live",
+        "description": "rich.live",
+        "isExtraImport": true,
+        "detail": "rich.live",
+        "documentation": {}
+    },
+    {
+        "label": "Panel",
+        "importPath": "rich.panel",
+        "description": "rich.panel",
+        "isExtraImport": true,
+        "detail": "rich.panel",
+        "documentation": {}
+    },
+    {
         "label": "Panel",
         "importPath": "rich.panel",
         "description": "rich.panel",
@@ -578,6 +698,22 @@
         "description": "rich.text",
         "isExtraImport": true,
         "detail": "rich.text",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "rich.text",
+        "description": "rich.text",
+        "isExtraImport": true,
+        "detail": "rich.text",
+        "documentation": {}
+    },
+    {
+        "label": "Layout",
+        "importPath": "rich.layout",
+        "description": "rich.layout",
+        "isExtraImport": true,
+        "detail": "rich.layout",
         "documentation": {}
     },
     {
@@ -622,6 +758,14 @@
         "documentation": {}
     },
     {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -646,6 +790,14 @@
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
         "documentation": {}
     },
     {
@@ -1526,7 +1678,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        console.print(f\"[cyan]Processing {file_path}...[/cyan]\")\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                # Use subprocess for FFmpeg directly to catch errors\n                result = subprocess.run(",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        console.print(f\"[cyan]Processing {file_path}...[/cyan]\")\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                result = subprocess.run(\n                    ['ffmpeg', '-i', file_path, '-ac', '1', '-ar', '22050', wav_path],",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1544,7 +1696,7 @@
         "kind": 2,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS_DEFAULT):\n    if len(features_scaled) < 2:\n        return 1\n    max_k = min(int(np.sqrt(len(features_scaled))) + 1, max_k + 1, len(features_scaled))\n    silhouette_scores = []\n    for k in range(2, max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
+        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS_DEFAULT, min_k=MIN_CLUSTERS):\n    if len(features_scaled) < min_k:\n        return min_k if len(features_scaled) > 1 else 1\n    max_k = min(int(np.sqrt(len(features_scaled))) + 1, max_k + 1, len(features_scaled))\n    silhouette_scores = []\n    for k in range(max(min_k, 2), max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1589,7 +1741,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_CLUSTERS = 2  # New: Minimum number of clusters\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1598,7 +1750,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 12\nMIN_CLUSTERS = 2  # New: Minimum number of clusters\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1607,7 +1759,16 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
+        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 12\nMIN_CLUSTERS = 2  # New: Minimum number of clusters\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
+        "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_CLUSTERS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_final",
+        "description": "audio.audio_cluster_final",
+        "peekOfCode": "MIN_CLUSTERS = 2  # New: Minimum number of clusters\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1616,7 +1777,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
+        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1625,7 +1786,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1634,7 +1795,7 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "KEEP_ORIGINALS = True  # Preserve originals for debugging\nMAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
+        "peekOfCode": "KEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
         "detail": "audio.audio_cluster_final",
         "documentation": {}
     },
@@ -1643,8 +1804,161 @@
         "kind": 5,
         "importPath": "audio.audio_cluster_final",
         "description": "audio.audio_cluster_final",
-        "peekOfCode": "MAX_WORKERS = min(4, os.cpu_count())  # Limit parallelism to avoid overload\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
+        "peekOfCode": "MAX_WORKERS = min(4, os.cpu_count())\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
         "detail": "audio.audio_cluster_final",
+        "documentation": {}
+    },
+    {
+        "label": "validate_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(f\"FFmpeg validation failed: {result.stderr.decode()}\")\n        duration_line = [line for line in result.stderr.decode().splitlines() if \"Duration\" in line]\n        if not duration_line:",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        console.print(f\"[cyan]Processing {file_path}...[/cyan]\")\n        if not validate_audio(file_path, check_content=True):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                result = subprocess.run(\n                    ['ffmpeg', '-i', file_path, '-ac', '1', '-ar', '22050', wav_path],",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "extract_features",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        rms = np.mean(librosa.feature.rms(y=y))\n        if rms < MIN_AMPLITUDE:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] No audible content (RMS: {rms:.6f})\")\n            return None, None",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "find_optimal_clusters",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS_DEFAULT, min_k=MIN_CLUSTERS):\n    if len(features_scaled) < min_k:\n        return min_k if len(features_scaled) > 1 else 1\n    max_k = min(int(np.sqrt(len(features_scaled))) + 1, max_k + 1, len(features_scaled))\n    silhouette_scores = []\n    for k in range(max(min_k, 2), max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "generate_cluster_layout",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def generate_cluster_layout(clusters):\n    layout = Layout()\n    layout.split_column(\n        Layout(name=\"header\", size=3),\n        Layout(name=\"clusters\")\n    )\n    layout[\"header\"].update(Panel(Text(\"Clustering in Progress\", style=\"bold cyan\", justify=\"center\")))\n    cluster_panels = []\n    colors = [\"blue\", \"green\", \"yellow\", \"magenta\", \"cyan\", \"red\", \"white\", \"bright_blue\"]\n    for cluster_id, files in clusters.items():",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "process_audio_files",
+        "kind": 2,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    console.print(f\"[bold cyan]Found {len(file_names)} audio files to process.[/bold cyan]\")\n    # Preprocessing",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "console",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "console = Console()\nlogging.basicConfig(level=logging.INFO, format=\"%(message)s\", handlers=[logging.StreamHandler()])\n# ASCII Art\nBANNER = \"\"\"\n[bold cyan]\n    ██████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "BANNER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    ██████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n    2025, Graham Waters\n[/bold cyan]",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "AUDIO_FOLDER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/TESTING_AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 30\nMIN_CLUSTERS = 5\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS_DEFAULT = 30\nMIN_CLUSTERS = 5\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_CLUSTERS_DEFAULT",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "MAX_CLUSTERS_DEFAULT = 30\nMIN_CLUSTERS = 5\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_CLUSTERS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "MIN_CLUSTERS = 5\nMIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_DURATION",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "MIN_DURATION = 0.5\nMIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_AMPLITUDE",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "MIN_AMPLITUDE = 0.001\nKEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "KEEP_ORIGINALS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "KEEP_ORIGINALS = True\nMAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_WORKERS",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "MAX_WORKERS = min(4, os.cpu_count())\nEXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(",
+        "detail": "audio.audio_cluster_grok_updates",
+        "documentation": {}
+    },
+    {
+        "label": "EXPECTED_FEATURE_DIM",
+        "kind": 5,
+        "importPath": "audio.audio_cluster_grok_updates",
+        "description": "audio.audio_cluster_grok_updates",
+        "peekOfCode": "EXPECTED_FEATURE_DIM = 42  # 13 MFCC + 12 chroma + 7 spectral contrast + 5 others (centroid, flatness, rms, zero_crossing, tempo) + 5 onset\n# Ensure FFmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity and content\ndef validate_audio(file_path, check_content=False):\n    try:\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],",
+        "detail": "audio.audio_cluster_grok_updates",
         "documentation": {}
     },
     {
