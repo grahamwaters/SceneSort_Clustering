@@ -44,6 +44,150 @@
         "documentation": {}
     },
     {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
         "label": "KMeans",
         "importPath": "sklearn.cluster",
         "description": "sklearn.cluster",
@@ -196,11 +340,36 @@
         "documentation": {}
     },
     {
+        "label": "silhouette_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "skew",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
         "label": "defaultdict",
         "importPath": "collections",
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
@@ -220,11 +389,84 @@
         "documentation": {}
     },
     {
-        "label": "track",
+        "label": "Progress",
         "importPath": "rich.progress",
         "description": "rich.progress",
         "isExtraImport": true,
         "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "BarColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TextColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "TimeRemainingColumn",
+        "importPath": "rich.progress",
+        "description": "rich.progress",
+        "isExtraImport": true,
+        "detail": "rich.progress",
+        "documentation": {}
+    },
+    {
+        "label": "Live",
+        "importPath": "rich.live",
+        "description": "rich.live",
+        "isExtraImport": true,
+        "detail": "rich.live",
+        "documentation": {}
+    },
+    {
+        "label": "Panel",
+        "importPath": "rich.panel",
+        "description": "rich.panel",
+        "isExtraImport": true,
+        "detail": "rich.panel",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "rich.text",
+        "description": "rich.text",
+        "isExtraImport": true,
+        "detail": "rich.text",
+        "documentation": {}
+    },
+    {
+        "label": "Layout",
+        "importPath": "rich.layout",
+        "description": "rich.layout",
+        "isExtraImport": true,
+        "detail": "rich.layout",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
         "documentation": {}
     },
     {
@@ -234,6 +476,15 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
         "documentation": {}
     },
     {
@@ -288,15 +539,6 @@
         "importPath": "signal",
         "description": "signal",
         "detail": "signal",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
         "documentation": {}
     },
     {
@@ -969,143 +1211,6 @@
         "documentation": {}
     },
     {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "ThreadPoolExecutor",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "as_completed",
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "isExtraImport": true,
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
-        "documentation": {}
-    },
-    {
         "label": "get_image_embedding",
         "importPath": "main",
         "description": "main",
@@ -1130,11 +1235,20 @@
         "documentation": {}
     },
     {
+        "label": "validate_audio",
+        "kind": 2,
+        "importPath": "audio.audio_cluster",
+        "description": "audio.audio_cluster",
+        "peekOfCode": "def validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(\n            ['ffmpeg', '-i', file_path, '-f', 'null', '-'],\n            stderr=subprocess.PIPE, stdout=subprocess.PIPE, check=False\n        )\n        if result.returncode != 0:\n            raise ValueError(\"FFmpeg validation failed\")\n        # Extract duration from FFmpeg output",
+        "detail": "audio.audio_cluster",
+        "documentation": {}
+    },
+    {
         "label": "preprocess_audio",
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.\n    Returns the path to the processed file.\n    \"\"\"\n    try:\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \".wav\")\n            if not os.path.exists(wav_path):  # Convert only if necessary\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")",
+        "peekOfCode": "def preprocess_audio(file_path):\n    try:\n        if not validate_audio(file_path):\n            return None\n        if file_path.lower().endswith(\".mp3\"):\n            wav_path = file_path.replace(\".mp3\", \"_temp.wav\")\n            if not os.path.exists(wav_path):\n                audio = AudioSegment.from_file(file_path, format=\"mp3\")\n                audio = audio.set_channels(1).set_frame_rate(22050)\n                audio.export(wav_path, format=\"wav\")",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1143,34 +1257,34 @@
         "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:  # Ignore very short files\n            console.print(f\"[bold yellow]Skipping short file:[/bold yellow] {file_path}\")\n            return None\n        mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)\n        return np.mean(mfcc, axis=1)\n    except Exception as e:\n        console.print(f\"[bold red]Error processing {file_path}:[/bold red] {e}\")",
+        "peekOfCode": "def extract_features(file_path):\n    try:\n        y, sr = librosa.load(file_path, sr=None)\n        if len(y) < 512:\n            console.print(f\"[yellow]Skipping {file_path}:[/yellow] Too short\")\n            return None, None\n        # Basic features as fallback\n        rmse = np.mean(librosa.feature.rms(y=y))\n        zero_crossing = np.mean(librosa.feature.zero_crossing_rate(y))\n        features = [rmse, zero_crossing]",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "audio_folder",
-        "kind": 5,
+        "label": "find_optimal_clusters",
+        "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "audio_folder = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\noutput_folder = os.path.join(os.path.dirname(audio_folder), \"AUDIO_CLUSTERS\")\nn_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):",
+        "peekOfCode": "def find_optimal_clusters(features_scaled, max_k=MAX_CLUSTERS):\n    if len(features_scaled) < 2:\n        return 1\n    silhouette_scores = []\n    max_k = min(max_k + 1, len(features_scaled))\n    for k in range(2, max_k):\n        kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)\n        labels = kmeans.fit_predict(features_scaled)\n        score = silhouette_score(features_scaled, labels)\n        silhouette_scores.append((k, score))",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "output_folder",
-        "kind": 5,
+        "label": "generate_cluster_layout",
+        "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "output_folder = os.path.join(os.path.dirname(audio_folder), \"AUDIO_CLUSTERS\")\nn_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"",
+        "peekOfCode": "def generate_cluster_layout(clusters):\n    layout = Layout()\n    layout.split_column(\n        Layout(name=\"header\", size=3),\n        Layout(name=\"clusters\")\n    )\n    layout[\"header\"].update(Panel(Text(\"Clustering in Progress\", style=\"bold cyan\", justify=\"center\")))\n    cluster_panels = []\n    colors = [\"blue\", \"green\", \"yellow\", \"magenta\", \"cyan\", \"red\", \"white\", \"bright_blue\"]\n    for cluster_id, files in clusters.items():",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "n_clusters",
-        "kind": 5,
+        "label": "process_audio_files",
+        "kind": 2,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "n_clusters = 5  # Adjust as needed\nconsole = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.",
+        "peekOfCode": "def process_audio_files():\n    console.print(BANNER)\n    console.print(\"[bold green]Initializing Enhanced Audio Clustering Engine...[/bold green]\\n\")\n    # Collect audio files\n    file_names = [f for f in os.listdir(AUDIO_FOLDER) if f.lower().endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")]\n    if not file_names:\n        console.print(\"[bold red]No audio files found in the directory![/bold red]\")\n        sys.exit(1)\n    # Preprocessing\n    with Progress(",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
@@ -1179,79 +1293,52 @@
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "console = Console()\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] ffmpeg is not installed. Please install it to process audio files.\")\n    exit(1)\n# Function to clean and convert audio files\ndef preprocess_audio(file_path):\n    \"\"\"\n    Ensures audio is in WAV format and removes potential encoding issues.\n    Returns the path to the processed file.",
+        "peekOfCode": "console = Console()\n# ASCII Art\nBANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "file_names",
+        "label": "BANNER",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "file_names = [\n    f for f in os.listdir(audio_folder)\n    if f.endswith((\".wav\", \".mp3\", \".flac\")) and not f.startswith(\"._\")\n]\nfeatures, valid_files = [], []\nconsole.print(\"[bold cyan]Preprocessing audio files...[/bold cyan]\")\nfor file in track(file_names, description=\"Cleaning & Converting\"):\n    file_path = os.path.join(audio_folder, file)\n    processed_path = preprocess_audio(file_path)\n    if processed_path:",
+        "peekOfCode": "BANNER = \"\"\"\n[bold cyan]\n    █████╗ ██╗   ██╗██████╗ ██╗ ██████╗      ██████╗██╗     ██╗   ██╗███████╗████████╗███████╗██████╗\n    ██╔══██╗██║   ██║██╔══██╗██║██╔═══██╗    ██╔════╝██║     ██║   ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗\n    ███████║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║███████╗   ██║   █████╗  ██████╔╝\n    ██╔══██║██║   ██║██║  ██║██║██║   ██║    ██║     ██║     ██║   ██║╚════██║   ██║   ██╔══╝  ██╔══██╗\n    ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝    ╚██████╗███████╗╚██████╔╝███████║   ██║   ███████╗██║  ██║\n    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝      ╚═════╝╚══════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝\n    2025, Graham Waters\n[/bold cyan]",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "features",
+        "label": "AUDIO_FOLDER",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "features = np.array(features)\n# Scale the features\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)",
+        "peekOfCode": "AUDIO_FOLDER = \"/Volumes/BigBoy/portugal_movie/AUDIO_EXTRACTED\"\nOUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "scaler",
+        "label": "OUTPUT_FOLDER",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "scaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)",
+        "peekOfCode": "OUTPUT_FOLDER = os.path.join(os.path.dirname(AUDIO_FOLDER), \"AUDIO_CLUSTERS\")\nMAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "features_scaled",
+        "label": "MAX_CLUSTERS",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "features_scaled = scaler.fit_transform(features)\n# Apply K-means clustering\nconsole.print(\"[bold green]Clustering audio files...[/bold green]\")\nkmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files",
+        "peekOfCode": "MAX_CLUSTERS = 12\nMIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
     {
-        "label": "kmeans",
+        "label": "MIN_DURATION",
         "kind": 5,
         "importPath": "audio.audio_cluster",
         "description": "audio.audio_cluster",
-        "peekOfCode": "kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)\nlabels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):",
-        "detail": "audio.audio_cluster",
-        "documentation": {}
-    },
-    {
-        "label": "labels",
-        "kind": 5,
-        "importPath": "audio.audio_cluster",
-        "description": "audio.audio_cluster",
-        "peekOfCode": "labels = kmeans.fit_predict(features_scaled)\n# Organize files into clusters\nclusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):\n    cluster_dir = os.path.join(output_folder, f\"Cluster_{cluster_id}\")",
-        "detail": "audio.audio_cluster",
-        "documentation": {}
-    },
-    {
-        "label": "clusters",
-        "kind": 5,
-        "importPath": "audio.audio_cluster",
-        "description": "audio.audio_cluster",
-        "peekOfCode": "clusters = defaultdict(list)\nfor file, label in zip(valid_files, labels):\n    clusters[label].append(file)\n# Create output directories and move files\nos.makedirs(output_folder, exist_ok=True)\nconsole.print(\"[bold cyan]Sorting files into cluster folders...[/bold cyan]\")\nfor cluster_id, files in track(clusters.items(), description=\"Organizing Files\"):\n    cluster_dir = os.path.join(output_folder, f\"Cluster_{cluster_id}\")\n    os.makedirs(cluster_dir, exist_ok=True)\n    for file in files:",
-        "detail": "audio.audio_cluster",
-        "documentation": {}
-    },
-    {
-        "label": "table",
-        "kind": 5,
-        "importPath": "audio.audio_cluster",
-        "description": "audio.audio_cluster",
-        "peekOfCode": "table = Table(title=\"Audio Clustering Results\")\ntable.add_column(\"Cluster ID\", justify=\"center\", style=\"bold yellow\")\ntable.add_column(\"Audio Files\", style=\"bold magenta\")\nfor cluster_id, files in clusters.items():\n    table.add_row(str(cluster_id), \"\\n\".join(files))\nconsole.print(table)\nconsole.print(f\"[bold green]Clustered audio files saved in: {output_folder}[/bold green]\")",
+        "peekOfCode": "MIN_DURATION = 0.5  # Minimum audio duration in seconds\n# Ensure ffmpeg is installed\nif shutil.which(\"ffmpeg\") is None:\n    console.print(\"[bold red]Error:[/bold red] FFmpeg is not installed. Please install it first.\")\n    sys.exit(1)\n# Validate audio file integrity\ndef validate_audio(file_path):\n    try:\n        # Use FFmpeg to check file integrity and duration\n        result = subprocess.run(",
         "detail": "audio.audio_cluster",
         "documentation": {}
     },
